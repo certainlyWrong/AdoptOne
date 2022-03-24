@@ -1,0 +1,23 @@
+{
+  "name": "adoptone_v2",
+  "version": "1.0.0",
+  "description": "<div align=\"center\">   <h1>INICIO DE UM SONHO</h1>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/certainlyWrong/AdoptOne.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/certainlyWrong/AdoptOne/issues"
+  },
+  "homepage": "https://github.com/certainlyWrong/AdoptOne#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "typescript": "^4.6.2"
+  }
+}

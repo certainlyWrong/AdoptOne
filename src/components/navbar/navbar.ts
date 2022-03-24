@@ -16,13 +16,13 @@ const NavBar = () => `
 `
 
 const styleSheet = () => `
-  <link rel="stylesheet" href="./src/components/navbar/style.css">
+  <link rel="stylesheet" href="/src/components/navbar/style.css">
 `
 
 let divBar = document.querySelector<HTMLDivElement>('body')!;
 let head = document.querySelector<HTMLDivElement>('head')!;
 
 divBar.insertAdjacentHTML('beforebegin', NavBar());
-head.insertAdjacentHTML('afterbegin', styleSheet());
+head.insertAdjacentHTML('beforebegin', styleSheet());
 
 

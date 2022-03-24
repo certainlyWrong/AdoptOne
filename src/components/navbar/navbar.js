@@ -20,4 +20,4 @@ const styleSheet = () => `
 let divBar = document.querySelector('body');
 let head = document.querySelector('head');
 divBar.insertAdjacentHTML('beforebegin', NavBar());
-head.insertAdjacentHTML('afterbegin', styleSheet());
+head.insertAdjacentHTML('beforebegin', styleSheet());

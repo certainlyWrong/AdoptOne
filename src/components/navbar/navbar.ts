@@ -16,7 +16,7 @@ const NavBar = () => `
 `
 
 const styleSheet = () => `
-  <link rel="stylesheet" href="/src/components/navbar/style.css">
+  <link rel="stylesheet" href="./src/components/navbar/style.css">
 `
 
 let divBar = document.querySelector<HTMLDivElement>('body')!;

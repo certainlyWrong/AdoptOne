@@ -22,7 +22,7 @@ const styleSheet = () => `
 let divBar = document.querySelector<HTMLDivElement>('body')!;
 let head = document.querySelector<HTMLDivElement>('head')!;
 
-divBar.insertAdjacentHTML('beforebegin', NavBar());
-head.insertAdjacentHTML('beforebegin', styleSheet());
+divBar.insertAdjacentHTML('afterbegin', NavBar());
+head.insertAdjacentHTML('afterbegin', styleSheet());
 
 

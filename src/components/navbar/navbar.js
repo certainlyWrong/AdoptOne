@@ -15,9 +15,9 @@ const NavBar = () => `
   <nav>
 `;
 const styleSheet = () => `
-  <link rel="stylesheet" href="/src/components/navbar/style.css">
+  <link rel="stylesheet" href="./src/components/navbar/style.css">
 `;
 let divBar = document.querySelector('body');
 let head = document.querySelector('head');
-divBar.insertAdjacentHTML('beforebegin', NavBar());
-head.insertAdjacentHTML('beforebegin', styleSheet());
+divBar.insertAdjacentHTML('afterbegin', NavBar());
+head.insertAdjacentHTML('afterbegin', styleSheet());

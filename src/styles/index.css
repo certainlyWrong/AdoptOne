@@ -27,7 +27,7 @@ nav {
 }
 
 main {
-  background: url("./assets/images/cat.png") no-repeat center center;
+  /* background: url("./assets/images/cat.png") no-repeat center center; */
   background-size: cover;
   height: 92vh;
 }

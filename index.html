@@ -10,30 +10,40 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dangrek&display=swap" rel="stylesheet">
         <link rel='stylesheet' type='text/css' media='screen' href='./src/styles/reset.css'>
-        <link rel='stylesheet' type='text/css' media='screen' href='./src/styles/index.css'>
+        <link rel='stylesheet' type='text/css' media='screen' href='./src/styles/navbar.css'>
+        <link rel='stylesheet' type='text/css' media='screen' href='./src/styles/slide.css'>
     </head>
     <body>
         <header>
             <nav>
-                <img src="./assets/logo.svg" class="Logo" href="/"></img>
+                <img src="./assets/logo.svg" class="logo" href="/"></img>
                 <div class="mobile-menu">
                     <div class="line1"></div>
                     <div class="line2"></div>
                     <div class="line3"></div>
                 </div>
-                <ul class="nav-list">
+                <div>
+                  <ul class="nav-list">
                     <li><a href="">ANIMAIS</a></li>
                     <li><a href="">ARTIGOS</a></li>
                     <li><a href="">SOBRE O PROJETO</a></li>
                     <li><a href="">CONTATO</a></li>
-                    <li><button class="button-menu" href="">ENTRAR</button></li>
-                    <li><a href="">USER</a></li>
-                </ul>
+                  </ul>
+                </div>
+                <div id="logout">
+                  <button class="button-menu" href="">ENTRAR</button>
+                  <div class="user-icon">
+                    <img src="./assets/icons/cat-icon.svg">
+                  </div>
+                </div>
             </nav>
         </header>
-        <main>
-          <img src="./assets/images/small-dog-being-adorable-portrait-studio (1).jpg" class="slide" href="/"></img>
-        </main>
-        <script src="index.js"></script>
+        <div id="container-slide">
+          <img src="./assets/images/friendly-smart-basenji-dog-giving-his-paw-close-up-isolated-white.jpg" id="slide" href="/"></img>
+          <dvi class="overlay"></dvi>
+        </div>
+        <div class="dps"></div>
+        <script src="./src/scripts/slide/slide.js"></script>
+        <script src="./src/scripts/navbar/navbar.js"></script>
     </body>
 </html>

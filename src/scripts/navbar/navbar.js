@@ -45,22 +45,3 @@ window.addEventListener("resize", () => {
         navlist.style.zIndex = '0';
     }
 });
-
-let slide = document.querySelector('.slide'),
-    paths = [
-      "./assets/images/small-dog-being-adorable-portrait-studio.jpg",
-      "./assets/images/small-dog-being-adorable-portrait-studio (1).jpg"
-    ],
-    index = 0;
-
-
-setInterval(() => {
-  slide.setAttribute('src', paths[index])
-  if (index == 0) {
-    index = 1
-  }
-  else
-    {
-      index = 0;
-    }
-}, 3000);

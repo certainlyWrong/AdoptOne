@@ -1,49 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset='utf-8'>
-        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-        <title>Page Title</title>
-        <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <title>Menu</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Dangrek&display=swap" rel="stylesheet">
-        <link rel='stylesheet' type='text/css' media='screen' href='./src/styles/reset.css'>
-        <link rel='stylesheet' type='text/css' media='screen' href='./src/styles/navbar.css'>
-        <link rel='stylesheet' type='text/css' media='screen' href='./src/styles/slide.css'>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <img src="./assets/logo.svg" class="logo" href="/"></img>
-                <div class="mobile-menu">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
-                <div>
-                  <ul class="nav-list">
-                    <li><a href="">ANIMAIS</a></li>
-                    <li><a href="">ARTIGOS</a></li>
-                    <li><a href="">SOBRE O PROJETO</a></li>
-                    <li><a href="">CONTATO</a></li>
-                  </ul>
-                </div>
-                <div id="logout">
-                  <button class="button-menu" href="">ENTRAR</button>
-                  <div class="user-icon">
-                    <img src="./assets/icons/cat-icon.svg">
-                  </div>
-                </div>
-            </nav>
-        </header>
-        <div id="container-slide">
-          <img src="./assets/images/friendly-smart-basenji-dog-giving-his-paw-close-up-isolated-white.jpg" id="slide" href="/"></img>
-          <dvi class="overlay"></dvi>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dangrek&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/styles/reset.css">
+  <link rel="stylesheet" href="./src/styles/navbar.css">
+  <link rel="stylesheet" href="./src/styles/slide.css">
+  <link rel="stylesheet" href="./src/styles/button-return.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img id="logo-img" src="./assets/logo.svg">
+      </div>
+      <div id="menu">
+        <ul>
+          <li>ANIMAIS</li>
+          <li>ARTIGOS</li>
+          <li>SOBRE O PROJETO</li>
+          <li>CONTATO</li>
+        </ul>
+      </div>
+      <div class="login">
+        <a href="#"><button class="button-login">ENTRAR</button></a>
+        <div class="icon-user">
+          <img src="./assets/icons/cat-icon.svg">
         </div>
-        <div class="dps"></div>
-        <script src="./src/scripts/slide/slide.js"></script>
-        <script src="./src/scripts/navbar/navbar.js"></script>
-    </body>
+      </div>
+    </nav>
+  </header>
+  <div class="slide">
+    <img class="slide-content" src="./assets/images/cat.png">
+    <div class="overlay">
+      <h1>ADOTE</h1>
+    </div>
+  </div>
+
+  <button class="button-return"></button>
+
+  <div style="height: 2000px; width: 100%; background-color: brown; z-index: -10;">
+    <!-- <img src="../../../assets/images/cat.png"> -->
+  </div>
+  <script src="./src/scripts/navbar.js"></script>
+  <script src="./src/scripts/slide.js"></script>
+  <script src="./src/scripts/button-return.js"></script>
+</body>
 </html>
+

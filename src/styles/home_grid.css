@@ -8,6 +8,8 @@
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-auto-rows: minmax(100px, auto);
   gap: 20px;
+  animation: alternate;
+  transition: 2s;
 }
 
 .column {

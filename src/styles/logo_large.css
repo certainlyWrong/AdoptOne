@@ -6,9 +6,13 @@
   justify-items: center;
   align-items: center;
   text-align: center;
+  animation: alternate;
+  transition: 2s;
 }
 
 .logo-large img {
   width: 50vw;
   margin: auto;
+  animation: alternate;
+  transition: 2s;
 }

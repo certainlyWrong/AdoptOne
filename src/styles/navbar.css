@@ -6,7 +6,8 @@ header nav {
   display: flex;
   align-items: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  transition: 0.3s ease-out;
+  animation: alternate;
+  transition: 2s;
 }
 
 header {
@@ -39,7 +40,8 @@ header.sticky {
   padding: 10px;
   color: aliceblue;
   font-family: 'Dangrek', 'Courier New', Courier, monospace;
-  transition: 00.4s;
+  animation: alternate;
+  transition: 2s;
 }
 
 #menu li:hover {

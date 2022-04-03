@@ -1,10 +1,10 @@
 
-let adapt: number = 0;
+let slide_adapt: number = 0;
 
 window.addEventListener("scroll", () => {
   let header = document.querySelector(".slide")!;
-  header.classList.toggle("adapt", window.scrollY < adapt && window.scrollY != 0);
-  adapt = window.scrollY;
+  header.classList.toggle("adapt", window.scrollY < slide_adapt && window.scrollY > 90);
+  slide_adapt = window.scrollY;
 })
 
 let slide:HTMLElement = document.querySelector('.slide-content')!;

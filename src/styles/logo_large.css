@@ -1,0 +1,14 @@
+
+.logo-large {
+  margin-top: 5vh;
+  display: flex;
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+.logo-large img {
+  width: 50vw;
+  margin: auto;
+}

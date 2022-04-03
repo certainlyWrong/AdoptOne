@@ -8,11 +8,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dangrek&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./src/styles/reset.css">
   <link rel="stylesheet" href="./src/styles/navbar.css">
   <link rel="stylesheet" href="./src/styles/slide.css">
   <link rel="stylesheet" href="./src/styles/home_grid.css">
   <link rel="stylesheet" href="./src/styles/button-return.css">
+  <link rel="stylesheet" href="./src/styles/logo_large.css">
+  <link rel="stylesheet" href="./src/styles/line.css">
+  <link rel="stylesheet" href="./src/styles/articles_content.css">
+  <link rel="stylesheet" href="./src/styles/footer.css">
   <title>Document</title>
 </head>
 
@@ -52,53 +57,91 @@
     </div>
   </div>
 
-  <main class="Cards">
-    <section class="card">
+  <!-- 
+    ? LOGO
+   -->
+  <div class="logo-large">
+    <img src="./assets/logoV2.svg">
+  </div>
+
+  <!-- 
+    ? GRID
+   -->
+  <main class="cards">
+    <section class="column">
       <h1>Adoção</h1>
-      <span>Eske wap kanpe deye tout saw di yo
+      <span>
+        Eske wap kanpe deye tout saw di yo
         Eske wap kanpe de ye tout saw di yo
         Eske wap kanpe deye tout saw di yo
         Eske wap kanpe de ye tout saw di yo.
       </span>
+      <br>
       <button>Lear More</button>
     </section>
-    <section class="card">
+    <section class="column">
       <h1>Animais Desaparecidos</h1>
-      <span>Eske wap kanpe deye tout saw di yo
+      <span>
+        Eske wap kanpe deye tout saw di yo
         Eske wap kanpe de ye tout saw di yo
         Eske wap kanpe deye tout saw di yo
         Eske wap kanpe de ye tout saw di yo.
       </span>
+      <br>
       <button>Lear More</button>
     </section>
-    <section class="card">
+    <section class="column">
       <h1>Animais Abondonados</h1>
-      <span>Eske wap kanpe deye tout saw di yo
+      <span>
+        Eske wap kanpe deye tout saw di yo
         Eske wap kanpe de ye tout saw di yo
         Eske wap kanpe deye tout saw di yo
         Eske wap kanpe de ye tout saw di yo.
       </span>
+      <br>
       <button>Lear More</button>
     </section>
-    <section class="card">
+    <section class="column">
       <h1>Loja</h1>
-      <span>Eske wap kanpe deye tout saw di yo
+      <span>
+        Eske wap kanpe deye tout saw di yo
         Eske wap kanpe de ye tout saw di yo
         Eske wap kanpe deye tout saw di yo
         Eske wap kanpe de ye tout saw di yo.
       </span>
-      <button>Ir para a Loja.</button>
+      <br>
+      <button>Ir para a Loja</button>
     </section>
   </main>
 
+    <!-- 
+    ? LINE
+   -->
+  <div class="line-container">
+    <div class="line"></div>
+  </div>
+
+  <div class="artigos-content">
+    <section>
+      <h1>ARTIGOS</h1>
+      <span class="button-span">Como cuidar de animais abondonados?</span>
+      <span class="button-span">Cachorro com problema no fígado Causas e Sintomas.</span>
+      <span class="button-span">Benefícios da ração com proteína de insetos para cachorros.</span>
+      <button>VER MAIS ARTIGOS</button>
+    </section>
+    <img src="./assets/images/Dog 1.png">
+  </div>
+
   <button class="button-return"></button>
 
-  <div style="height: 2000px; width: 100%; background-color: brown; z-index: -10;">
-    <!-- <img src="../../../assets/images/cat.png"> -->
-  </div>
+  <footer>
+
+  </footer>
+  
   <script src="./src/scripts/navbar.js"></script>
   <script src="./src/scripts/slide.js"></script>
   <script src="./src/scripts/button-return.js"></script>
+
 </body>
 
 </html>

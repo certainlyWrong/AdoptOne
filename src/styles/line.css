@@ -1,0 +1,16 @@
+
+.line-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  position: absolute;
+  width: 90vw;
+  height: 0px;
+  margin: auto;
+  /* left: 72px;
+  top: 1522px; */
+  border: 2px solid #BFC6C3;
+}

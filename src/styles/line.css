@@ -8,7 +8,7 @@
 }
 
 .line {
-  position: absolute;
+  position: block;
   width: 90vw;
   height: 0px;
   margin: auto;

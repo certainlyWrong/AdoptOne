@@ -111,7 +111,7 @@ header.sticky {
     position: absolute;
     display: block;
     z-index: 50;
-    top: 2vh;
+    top: 20px;
     padding-bottom: 10vh;
     width: 100%;
     background-color: #D57A66;
@@ -137,7 +137,7 @@ header.sticky {
     justify-content: center;
     align-items: center;
     padding-top: 80px;
-    top: 220px;
+    top: 210px;
     animation: alternate;
     transition: 2s;
   }

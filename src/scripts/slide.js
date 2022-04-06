@@ -1,10 +1,4 @@
 "use strict";
-let slide_adapt = 0;
-window.addEventListener("scroll", () => {
-    let header = document.querySelector(".slide");
-    header.classList.toggle("adapt", window.scrollY < slide_adapt && window.scrollY > 90);
-    slide_adapt = window.scrollY;
-});
 let slide = document.querySelector('.slide-content');
 let paths = [
     "./assets/images/small-dog-being-adorable-portrait-studio (1).jpg",

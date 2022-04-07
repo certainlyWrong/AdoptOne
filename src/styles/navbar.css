@@ -1,5 +1,11 @@
 /* ? A ESTRUTURA DA NAVBAR */
 header nav {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   background-color: #D57A66;
   justify-content: space-around;
   display: flex;
@@ -41,11 +47,12 @@ header.sticky {
   color: aliceblue;
   font-family: 'Dangrek', 'Courier New', Courier, monospace;
   animation: alternate;
-  transition: 2s;
+  transition: 0.5s;
 }
 
 #menu li:hover {
   color: #74EBDD;
+  background-color: #db9f92;
 }
 
 /* ? A PARTE DO LOGIN DA NAVBAR */
@@ -135,7 +142,7 @@ header.sticky {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 80px;
+    /* padding-top: 80px; */
     top: -210px;
     z-index: 9;
   }
@@ -158,7 +165,7 @@ header.sticky {
   }
 
   .login-dynamic.activate-login {
-    top: 200px;
+    top: 285px;
     transition-delay: 1s;
     transform: translateY(40px);
     transition: transform 0.3s ease-out;

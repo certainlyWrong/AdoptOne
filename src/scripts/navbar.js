@@ -11,8 +11,10 @@ window.addEventListener("scroll", () => {
     comp = window.scrollY;
 });
 button_menu_mobile.addEventListener("click", () => {
-    let menu = document.querySelector("#menu"), login = document.querySelector(".login");
+    console.log('asdasd');
+    let menu = document.querySelector("#menu"), login = document.querySelector(".login-static"), mobile_menu = document.querySelector(".mobile-menu");
     menu.classList.toggle("activate-menu", activate);
     login.classList.toggle("activate-login", activate);
+    mobile_menu.classList.toggle("active", activate);
     activate = !activate;
 });

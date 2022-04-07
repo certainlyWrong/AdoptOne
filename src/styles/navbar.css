@@ -1,5 +1,11 @@
 /* ? A ESTRUTURA DA NAVBAR */
 header nav {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   background-color: #D57A66;
   justify-content: space-around;
   display: flex;
@@ -14,15 +20,16 @@ header {
   position: fixed;
   width: 100%;
   height: 90px;
+  z-index: 50;
 }
 
 header.sticky {
   top: -100px;
   position: fixed;
-  z-index: 10;
   transition-delay: 0.5s;
   transform: translateY(100px);
   transition: transform 0.3s ease-out;
+  z-index: 10;
 }
 
 /* ? A LOGO DA NAVBAR */
@@ -40,15 +47,16 @@ header.sticky {
   color: aliceblue;
   font-family: 'Dangrek', 'Courier New', Courier, monospace;
   animation: alternate;
-  transition: 2s;
+  transition: 0.5s;
 }
 
 #menu li:hover {
   color: #74EBDD;
+  background-color: #db9f92;
 }
 
 /* ? A PARTE DO LOGIN DA NAVBAR */
-.login {
+.login-dynamic {
   display: flex;
   align-items: center;
 }
@@ -96,25 +104,51 @@ header.sticky {
 
 #button-menu-mobile {
   display: none;
+  cursor: pointer;
+}
+
+#button-menu-mobile div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
 }
 
 @media (max-width: 900px) {
   #menu {
-    display: none;
+    position: absolute;
+    display: block;
+    top: -470px;
+    padding-bottom: 70px;
+    padding-top: 30px;
+    width: 100%;
+    background-color: #D57A66;
+    z-index: -9;
   }
 
-  .login {
-    display: none;
+  #menu li {
+    display: block;
+    /* padding: 1vh; */
+  }
+
+  #menu ul {
+    align-items: center;
+    text-align: center;
+  }
+
+  .login-dynamic {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 80px; */
+    top: -210px;
+    z-index: 9;
   }
 
   #menu.activate-menu {
-    position: absolute;
-    display: block;
-    z-index: 50;
-    top: 2vh;
-    padding-bottom: 10vh;
-    width: 100%;
-    background-color: #D57A66;
+    top: 22px;
     transition-delay: 1s;
     transform: translateY(70px);
     transition: transform 0.3s ease-out;
@@ -130,26 +164,27 @@ header.sticky {
     text-align: center;
   }
 
-  .login.activate-login {
-    position: absolute;
-    display: flex;
-    z-index: 50;
-    justify-content: center;
-    align-items: center;
-    padding-top: 80px;
-    top: 220px;
-    animation: alternate;
-    transition: 2s;
+  .login-dynamic.activate-login {
+    top: 285px;
+    transition-delay: 1s;
+    transform: translateY(40px);
+    transition: transform 0.3s ease-out;
   }
 
   #button-menu-mobile {
-    display: initial;
-    background-color: aliceblue;
-    border: none;
-    padding: 2vh 4vh 2vh 4vh;
-    border-radius: 3vh;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    animation: alternate;
-    transition: 2s;
+    display: block;
   }
 }
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+

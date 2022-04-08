@@ -1,131 +1,134 @@
 /*
     Disponib: https://www.youtube.com/watch?v=YOb67OKw62s
 */
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
 }
 
-.Footer{
-    background-color: #63A375;
-    padding: 70px 0;
+.footer {
+  background-color: #63A375;
+  padding: 40px 0;
 }
 
-.Linha{
-    /* background-color: cornflowerblue; */
+.linha {
+  /* background-color: cornflowerblue; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+}
+
+.componentes {
+  /* background-color: cornflowerblue; */
+  margin: auto;
+  max-width: 1170px;
+}
+
+.coluna01 {
+  padding: 0 15px;
+  width: 25%;
+}
+
+.coluna01 h4 {
+  color: white;
+  font-family: 'Dangrek';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 29px;
+  margin-bottom: 35px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.coluna01 li a {
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 29px;
+}
+
+.coluna01 h4::before {
+  background-color: #CA6680;
+  bottom: -10px;
+  box-sizing: border-box;
+  content: '';
+  height: 2px;
+  left: 0;
+  position: absolute;
+  width: 50px;
+}
+
+.coluna01 ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.coluna01 ul li a {
+  color: white;
+  display: block;
+  font-size: 16px;
+  font-style: bold;
+  font-weight: 300px;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.3s ease;
+}
+
+.coluna01 ul li a:hover {
+  color: #CA6680;
+  padding-left: 10px;
+}
+
+.coluna01 .social img {
+  height: 40px;
+  list-style: none;
+  width: 40px;
+}
+
+.coluna01 .social a {
+  /* background-color: gray; */
+  border-radius: 50%;
+  color: white;
+  display: block;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  list-style: none;
+  margin: 0px 10px 10px 0px;
+  text-align: center;
+  transition: all 0.5s ease;
+  width: 40px;
+
+}
+
+.coluna01 .social a:hover {
+  fill: rgb(202, 102, 128);
+}
+
+.coluna01 img {
+  height: 200px;
+  width: 200px;
+}
+
+@media(max-width:747px) {
+  .coluna01 {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media(max-width:477px) {
+  .coluna01 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .social {
     display: flex;
-    flex-wrap: wrap;
-}
-
-ul{
-    list-style: none;
-}
-
-.Componentes{
-    /* background-color: cornflowerblue; */
-    margin:auto;
-    max-width: 1170px;
-}
-
-.Coluna01{
-    padding: 0 15px;
-    width: 25%;
-}
-
-.Coluna01 h4{
-    color: white;
-    font-family: 'Dangrek';
-    font-size: 16px;
-    font-style:normal;
-    font-weight: 400;
-    letter-spacing: 0em;
-    line-height: 29px;
-    margin-bottom: 35px;
-    position: relative;
-    text-transform: uppercase;
-}
-
-.Coluna01 li a{
-    font-family: 'Montserrat';
-    font-size: 16px;
-    font-weight: 700;
-    letter-spacing: 0em;
-    line-height: 29px;
-}
-
-.Coluna01 h4::before{
-    background-color: #CA6680;
-    bottom: -10px;
-    box-sizing: border-box;
-    content: '';
-    height: 2px;
-    left: 0;
-    position: absolute;
-    width: 50px;
-}
-
-.Coluna01 ul li:not(:last-child){
-    margin-bottom: 10px;
-}
-
-.Coluna01 ul li a{
-    color: white;
-    display: block;
-    font-size: 16px;
-    font-style: bold;
-    font-weight: 300px;
-    text-decoration: none;
-    text-transform: capitalize;
-    transition: 0.3s ease;
-}
-
-.Coluna01 ul li a:hover{
-    color: #CA6680;
-    padding-left: 10px;
-}
-
-.Coluna01 .Social img{
-    height: 40px;
-    list-style: none;
-    width: 40px;
-}
-
-.Coluna01 .Social a{
-    /* background-color: gray; */
-    border-radius: 50%;
-    color: white;
-    display: block;
-    display: inline-block;
-    height: 40px;
-    line-height: 40px;
-    list-style: none;
-    margin: 0px 10px 10px 0px;
-    text-align: center;
-    transition: all 0.5s ease;
-    width: 40px;
-    
-}
-
-.Coluna01 .Social a:hover{
-    fill: rgb(202, 102, 128);
-}
-
-.Coluna01 img{
-    height: 200px;
-    width: 200px;
-}
-
-@media(max-width:747px){
-    .Coluna01{
-        width: 50%;
-        margin-bottom: 30px;
-    }   
-} 
-
-@media(max-width:477px){
-    .Coluna01{
-        width: 100%;
-        margin-bottom: 30px;
-    }
+    justify-content: space-around;
+  }
 }

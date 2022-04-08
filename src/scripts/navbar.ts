@@ -12,15 +12,11 @@ window.addEventListener("scroll", () => {
   else {
     header.classList.toggle("sticky", window.scrollY < comp || window.scrollY < 90);
   }
-
   comp = window.scrollY;
 });
 
 
 button_menu_mobile.addEventListener("click", () => {
-
-  console.log('asdasd')
-
   let menu = document.querySelector("#menu")!,
       login = document.querySelector(".login-static")!,
       mobile_menu = document.querySelector(".mobile-menu")!;

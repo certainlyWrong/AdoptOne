@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 10px;
   animation: alternate;
   transition: 2s;
 }
@@ -15,4 +16,5 @@
   /* left: 72px;
   top: 1522px; */
   border: 2px solid #BFC6C3;
+  border-radius: 50px;
 }

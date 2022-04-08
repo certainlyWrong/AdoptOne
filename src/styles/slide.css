@@ -39,3 +39,9 @@
 .overlay H1 {
   margin: auto;
 }
+
+@media (max-width: 550px) {
+  .slide {
+    margin-top: 55px;
+  }
+}

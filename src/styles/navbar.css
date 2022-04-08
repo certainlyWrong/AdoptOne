@@ -63,6 +63,7 @@ header.sticky {
 }
 
 .button-login {
+  cursor: pointer;
   color: #D57A66;
   font-size: x-large;
   font-family: 'Dangrek', 'Courier New', Courier, monospace;
@@ -115,6 +116,19 @@ header.sticky {
   margin: 8px;
   transition: 0.3s;
 }
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
 
 @media (max-width: 900px) {
   #menu {
@@ -177,15 +191,22 @@ header.sticky {
   }
 }
 
-.mobile-menu.active .line1 {
-  transform: rotate(-45deg) translate(-8px, 8px);
-}
 
-.mobile-menu.active .line2 {
-  opacity: 0;
-}
+@media (max-width: 550px) {
+  header nav {
+    height: 60px;
+  }
 
-.mobile-menu.active .line3 {
-  transform: rotate(45deg) translate(-5px, -7px);
-}
+  #logo-img {
+    width: 65px;
+    height: 65px;
+  }
 
+  #menu.activate-menu {
+    top: -20px;
+  }
+
+  .login-dynamic.activate-login {
+    top: 240px;
+  }
+}

@@ -1,0 +1,138 @@
+* {
+  font-family: 'Dangrek', 'Courier New', Courier, monospace;
+}
+
+body {
+  background-color: #63A375;
+  color: white;
+  font-weight: 400;
+  display: flex;
+  min-height: 100vh;
+}
+
+main {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+main .social-media {
+  display: flex;
+  align-content: center;
+}
+
+main .social-media a {
+  text-decoration: none;
+}
+
+main .social-media img {
+  width: 36px;
+  margin-left: 3rem;
+}
+
+main .social-media a:first-child img {
+  margin-left: 0px;
+}
+
+main .alternative {
+  margin-top: 1rem;
+}
+
+main .alternative span {
+  font-size: 1.1rem;
+  font-weight: 400px;
+  color: (255, 255, 255, 0.3);
+  position: relative;
+}
+
+main .alternative span::before,
+main .alternative span::after {
+  position: absolute;
+  content: '';
+  height: 1px;
+  width: 100px;
+  bottom: 50%;
+  right: 50px;
+  background-color: (255, 255, 255, 0.3);
+}
+
+main .alternative span::after {
+  left: 50px;
+}
+
+main form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+main form label {
+  display: flex;
+  flex-direction: column;
+}
+
+main form label span {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+main form input {
+  background-color: lightgray;
+  font-family: Arial;
+  width: 300px;
+  height: 50px;
+  padding: 0 0.5rem;
+  margin-top: 1rem;
+  outline: none;
+  color: black;
+  font-size: 1rem;
+  border: 1px solid #63A375;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+main form input[type="submit"] {
+  color: #D57A66;
+  font-family: 'Dangrek', 'Courier New', Courier, monospace;
+  background-color: white;
+  cursor: pointer;
+  width: 50%;
+  margin-top: 3rem;
+  border: none;
+  border-radius: 32px;
+  transition: all .4s ease-in-out;
+}
+
+main form input[type="submit"]:hover {
+  background-color: #D57A66;
+  color: white;
+}
+
+section.images {
+  display: flex;
+  align-items: flex-end;
+  padding: 4rem;
+  margin-left: 4em;
+}
+
+section.images img {
+  width: 80%;
+}
+
+section.images .circle {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #D57A66;
+  clip-path: circle(40% at right 80%);
+  z-index: -1;
+}

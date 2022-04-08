@@ -5,11 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dangrek&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+  
+  <!-- PRINCIPAIS IMPORTS DO CSS -->
+  <link rel="stylesheet" href="./src/styles/global_configs.css">
   <link rel="stylesheet" href="./src/styles/reset.css">
+
+  <!-- IMPORTS -->
   <link rel="stylesheet" href="./src/styles/navbar.css">
   <link rel="stylesheet" href="./src/styles/slide.css">
   <link rel="stylesheet" href="./src/styles/home_grid.css">
@@ -22,9 +23,7 @@
 </head>
 
 <body>
-  <!-- 
-    ? NAVBAR
-   -->
+  <!-- ? NAVBAR -->
   <header class="sticky">
     <nav>
       <div class="logo">
@@ -53,9 +52,7 @@
     </nav>
   </header>
 
-  <!-- 
-    ? SLIDE
-   -->
+  <!-- ? SLIDE -->
   <div class="slide">
     <img class="slide-content" src="./assets/images/cat.png">
     <div class="overlay">
@@ -63,16 +60,12 @@
     </div>
   </div>
 
-  <!-- 
-    ? LOGO
-   -->
+  <!-- ? LOGO -->
   <div class="logo-large">
     <img src="./assets/logoV2.svg">
   </div>
 
-  <!-- 
-    ? GRID
-   -->
+  <!-- ? GRID -->
   <div class="grid-container">
     <main class="cards">
       <section class="column">
@@ -122,13 +115,12 @@
     </main>
   </div>
 
-  <!-- 
-    ? LINE
-   -->
+  <!-- ? LINE -->
   <div class="line-container">
     <div class="line"></div>
   </div>
 
+  <!-- ? ARTIGOS -->
   <div class="artigos-content">
     <section>
       <h1>ARTIGOS</h1>
@@ -142,8 +134,10 @@
     </div>
   </div>
 
+  <!-- ? BOTÃO PARA VOLTAR AO INICIO-->
   <!-- <button class="button-return"></button> -->
 
+  <!-- ? FOOTER DA PAG -->
   <footer class="footer">
     <div class="componentes">
       <div class="linha">
@@ -188,10 +182,12 @@
     </div>
   </footer>
 
+  <!-- ? SCRIPTS -->
+  <!-- O SCRIPTS DEVEM SER IMPORTANDOS NO FINAL DO BODY,
+       PARA QUE OS SCRIPTS TENHAM ACESSO A TODAS AS TAGS -->
   <script src="./src/scripts/navbar.js"></script>
   <script src="./src/scripts/slide.js"></script>
   <!-- <script src="./src/scripts/button_return.js"></script> -->
-
 </body>
 
 </html>

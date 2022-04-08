@@ -1,6 +1,6 @@
 
 .logo-large {
-  margin-top: 5vh;
+  margin-top: 30px;
   display: flex;
   width: 100%;
   justify-items: center;
@@ -15,4 +15,14 @@
   margin: auto;
   animation: alternate;
   transition: 2s;
+}
+
+
+@media (max-width: 900px) {
+  .logo-large img {
+    width: 70vw;
+    margin: auto;
+    animation: alternate;
+    transition: 2s;
+  }
 }

@@ -1,7 +1,9 @@
 
 let comp: number = 0,
   button_menu_mobile = document.querySelector('#button-menu-mobile')!,
-  activate = true;
+  button_login = document.querySelector('.button-login')!,
+  activate = true,
+  login = false;
 
 window.addEventListener("scroll", () => {
   let header = document.querySelector("header")!;
@@ -28,4 +30,8 @@ button_menu_mobile.addEventListener("click", () => {
   activate = !activate;
 });
 
+button_login.addEventListener("click", () => {
+  button_login.innerHTML = login ? "SAIR" : "ENTRAR";
+  login = !login;
+})
 

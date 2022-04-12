@@ -163,14 +163,14 @@ section.images .circle {
 
   main{
     width: 100vw;
-    padding-left: 2rem;
+    padding: 5rem;
   }
 }
 
 @media only screen and (max-width: 450px){
   main{
     width: 100vw;
-    padding-left: 2rem;
+    padding: 5rem;
   }
 
   main h1{

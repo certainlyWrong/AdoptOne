@@ -163,13 +163,23 @@ section.images .circle {
 
   main{
     width: 100vw;
-    padding: 5rem;
   }
 }
 
 @media only screen and (max-width: 450px){
   main{
     width: 100vw;
-    padding: 5rem;
+  }
+
+  main h1{
+    font-size: 2rem;
+  }
+
+  main .alternative span{
+    font-size: 0.8rem;
+  }
+
+  main form label span, main form input[type="submit"]{
+    font-size: 1rem;
   }
 }

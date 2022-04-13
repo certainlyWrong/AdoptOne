@@ -1,6 +1,5 @@
 
 .slide {
-  margin-top: 90px;
   width: 100%;
   height: 400px;
   background-color: #D57A66;
@@ -38,10 +37,4 @@
 
 .overlay H1 {
   margin: auto;
-}
-
-@media (max-width: 550px) {
-  .slide {
-    margin-top: 55px;
-  }
 }

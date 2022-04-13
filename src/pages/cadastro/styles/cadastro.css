@@ -1,4 +1,8 @@
 * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
   font-family: 'Dangrek', 'Courier New', Courier, monospace;
 }
 
@@ -49,7 +53,7 @@ main .alternative {
 
 main .alternative span {
   font-size: 1.1rem;
-  font-weight: 400px;
+  font-weight: 400;
   color: (255, 255, 255, 0.3);
   position: relative;
 }
@@ -72,7 +76,7 @@ main .alternative span::after {
 main form {
   display: flex;
   flex-direction: column;
-  align-content: center;
+  align-items: center;
 }
 
 main form label {
@@ -82,7 +86,7 @@ main form label {
 
 main form label span {
   font-size: 1.1rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 main form input {
@@ -107,8 +111,7 @@ main form input[type="submit"] {
   background-color: white;
   cursor: pointer;
   width: 50%;
-  margin-top: 3rem;
-  margin-left: 5rem;
+  margin-top: 4rem;
   border: none;
   border-radius: 32px;
   transition: all .4s ease-in-out;
@@ -147,7 +150,7 @@ section.images .circle {
     width: 80%;
   }
   section.images .circle {
-    clip-path: circle(40% at right 80%);
+    clip-path: circle(35% at right 80%);
   }
 }
 
@@ -164,14 +167,15 @@ section.images .circle {
 
   main{
     width: 100vw;
+    padding-left: 4rem;
+  }
+
+  main h1{
+    font-size: 2.5rem;
   }
 }
 
 @media only screen and (max-width: 450px){
-  main{
-    width: 100vw;
-  }
-
   main h1{
     font-size: 2rem;
   }

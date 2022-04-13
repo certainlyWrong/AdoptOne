@@ -4,7 +4,7 @@
   display: grid;
   /* grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr)); */
   grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: minmax(100px, auto);
+  grid-auto-rows: minmax(200px, auto);
   gap: 20px;
   justify-content: stretch;
   align-items: center;
@@ -70,13 +70,7 @@
   background: linear-gradient(90deg,#FF8B87 0%,#CA6680 45.24%,#52947C 98.21%);
 }
 
-@media (min-width: 1280px) {
-  .cards {
-    grid-template-columns: repeat(4, 1fr); 
-  }
-}
-
-@media (max-width: 1280px) {
+@media (max-width: 1200px) {
   .cards {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }

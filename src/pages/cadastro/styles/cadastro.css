@@ -141,3 +141,46 @@ section.images .circle {
   clip-path: circle(40% at right 80%);
   z-index: -1;
 }
+
+@media only screen and (min-width: 900px) and (max-width: 1200px){
+  section.images img {
+    width: 80%;
+  }
+  section.images .circle {
+    clip-path: circle(40% at right 80%);
+  }
+}
+
+@media only screen and (max-width: 900px){
+  section.images img {
+    display: none;
+    visibility: hidden;
+  }
+
+  section.images .circle {
+    display: none;
+    visibility: hidden;
+  }
+
+  main{
+    width: 100vw;
+  }
+}
+
+@media only screen and (max-width: 450px){
+  main{
+    width: 100vw;
+  }
+
+  main h1{
+    font-size: 2rem;
+  }
+
+  main .alternative span{
+    font-size: 0.8rem;
+  }
+
+  main form label span, main form input[type="submit"]{
+    font-size: 1rem;
+  }
+}

@@ -8,6 +8,7 @@ body {
   font-weight: 400;
   display: flex;
   min-height: 100vh;
+  min-width: 100vw;
 }
 
 main {
@@ -21,6 +22,7 @@ main {
 main h1 {
   font-size: 3rem;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 main .social-media {
@@ -106,6 +108,7 @@ main form input[type="submit"] {
   cursor: pointer;
   width: 50%;
   margin-top: 3rem;
+  margin-left: 5rem;
   border: none;
   border-radius: 32px;
   transition: all .4s ease-in-out;
@@ -117,6 +120,7 @@ main form input[type="submit"]:hover {
 }
 
 section.images {
+  width: 50vw;
   display: flex;
   align-items: flex-end;
   padding: 4rem;

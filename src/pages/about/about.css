@@ -13,7 +13,7 @@ h1{
     text-align: center;
     font-weight: 400;
     font-size: 90px;
-    padding-top: 40px;
+    padding-top: 60px;
     background: linear-gradient(90deg, #FF8B87 35%, #CA6680 45.24%, #52947C 65.21%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -29,18 +29,17 @@ section{
 }
 
 section > p {
-    padding: 2em 2em;
+    padding: 1em;
     text-align: justify;
     justify-items: center;
 }
 
 section.imagem{
-    height: 400px;
+    height: 600px;
     background-color: white;
     color: white;
     background-size: cover;
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.377);
-
 }
 
 section.imagem > p{
@@ -58,37 +57,105 @@ section.imagem > p::first-line{
 
 section#img01 {
     background-image: url("./../../../assets/images/closeup-shot-snouts-cute-dog-cat-sitting-cheek-cheek.jpg");
-    background-position: right center;
+    background-position: bottom;
 }
 
-section.time #c01{
+section.time{
+    height: 600px;
+}
+
+section.time #c01, section.time #c02, section.time #c03 {
     position: absolute;
     width: 300px;
     height: 300px;
-    left: 107px;
     top: 890px;
     clip-path: circle(50%);
+}
+
+section.time #c01{
+    left: 107px;
     background: #FD8A87;
 }
 
 section.time #c02{
-    position: absolute;
-    width: 300px;
-    height: 300px;
     left: 530px;
-    top: 890px;
-    clip-path: circle(50%);
     background: #B66E80;
 }
 
 section.time #c03{
-    position: absolute;
-    width: 300px;
-    height: 300px;
     left: 970px;
-    top: 890px;
-    clip-path: circle(50%);
     background: #6AA08D;
 }
 
+section.time #img01, section.time #img02, section.time #img03{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 915px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    clip-path: circle(50%);
+}
 
+section.time #img01{
+    left: 130px;
+    background: url(./../../../assets/images/WhatsApp\ Image\ 2021-11-11\ at\ 16.45.41.jpeg);
+    background-size: 250px;
+    background-position: 50%;
+}
+
+section.time #s01, section.time #s02, section.time #s03{
+    position: absolute;
+    width: 269px;
+    height: 69px;
+    top: 1250px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+section.time #s01{
+    left: 125px;
+}
+
+section.time #s02{
+    left: 550px;
+}
+
+section.time #s03{
+    left: 1000px;
+}
+
+section.perguntas{
+    height: 400px;
+}
+
+section.perguntas #q01, section.perguntas #q02, section.perguntas #q03, section.perguntas #q04{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 1650px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+section.perguntas #q01{
+    left: 94px;
+    background: #FD8A87;
+}
+
+section.perguntas #q02{
+    left: 400px;
+    background: #DF7583;
+}
+
+section.perguntas #q03{
+    left: 700px;
+    background: #B66E80;
+}
+
+section.perguntas #q04{
+    left: 1000px;
+    background: #6AA08D;
+}

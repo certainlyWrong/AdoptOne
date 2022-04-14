@@ -1,0 +1,133 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100%;
+    background-color: white;
+}
+
+h1{
+    font-family: 'Dangrek', 'Courier New', Courier, monospace;
+    text-align: center;
+    font-weight: 400;
+    font-size: 90px;
+    padding-top: 14rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+h2{
+    font-family: 'Dangrek', 'Courier New', Courier, monospace;
+    text-align: center;
+    font-weight: 400; 
+    font-size: 40px;
+    padding-top: 3rem;
+    opacity: 0.5;
+}
+
+section.imagem{
+    height: 450px;
+    background-color: white;
+    color: white;
+    background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.377);
+}
+
+section#img01 {
+    background-image: url("./../../../assets/images/cute-little-dog-impersonating-business-person.jpg");
+    background-position: center;
+}
+
+section.botoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem;
+}
+
+section.botoes #b01, section.botoes #b02, section.botoes #b03{
+    font-size: 1rem;
+    margin-left: 2rem;
+    font-family: 'Dangrek', 'Courier New', Courier, monospace;
+    width: 400px;
+    height: 70px;
+    background-color: white;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+section.form {
+    height: 500px;
+}
+
+#linha01, #linha02{
+    position: absolute;
+    width: 283px;
+    height: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    transform: rotate(180deg); 
+    opacity: 0.5;
+    top: 750px;
+}
+
+#linha01{
+    left: 180px;
+}
+
+#linha02{
+    left: 888px;
+}
+
+section.form form{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-left: 12rem;
+}
+
+section.form form label {
+    display: flex;
+    flex-direction: column;
+}
+
+section.form form label span {
+    font-family: 'Dangrek';
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    opacity: 0.5;
+}
+
+section.form form input {
+    background-color: black;
+    opacity: 0.2;
+    font-family: Arial;
+    width: 391px;
+    height: 50px;
+    padding: 0 0.5rem;
+    margin-top: 1rem;
+    outline: none;
+    color: black;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+}
+
+section.form form input[type="submit"] {
+    color: white;
+    font-family: 'Dangrek', 'Courier New', Courier, monospace;
+    background-color: #D57A66;
+    cursor: pointer;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 32px;
+    transition: all .4s ease-in-out;
+    opacity: 100%;
+}
+  
+section.form form input[type="submit"]:hover {
+    background-color: white;
+    color: #D57A66;
+}

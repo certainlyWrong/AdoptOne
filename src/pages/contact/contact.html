@@ -4,9 +4,80 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Fale Consco</title>
+  <link rel="stylesheet" href="./../../../src/styles/global_configs.css">
+  <link rel="stylesheet" href="./../../styles/reset.css">
+  <link rel="stylesheet" href="./../../styles/navbar.css">
+  <link rel="stylesheet" href="./../../styles/footer.css">
+  <link rel="stylesheet" href="contact.css">
 </head>
 <body>
-  
+  <!-- ? NAVBAR -->
+  <header class="sticky">
+    <nav>
+      <div class="logo">
+        <img id="logo-img" src="./../../../assets/logo.svg">
+      </div>
+      <div id="menu">
+        <ul>
+          <li>ANIMAIS</li>
+          <li>ARTIGOS</li>
+          <li>LOJA</li>
+          <li><a href="./../about/about.html">SOBRE O PROJETO</a></li>
+          <li>CONTATO</li>
+        </ul>
+      </div>
+      <div class="login-static login-dynamic">
+        <a href="./../cadastro/cadastro.html"><button class="button-login">ENTRAR</button></a>
+        <div class="icon-user">
+          <img src="./../../../assets/icons/cat-icon.svg">
+        </div>
+      </div>
+      <div id="button-menu-mobile" class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="imagem" id="img01">
+    <h1>FALE CONOSCO</h1>
+  </section>
+
+  <section class="botoes">
+    <button id="b01">ENCONTRE SUA DUVIDA</button>
+    <button id="b02">CHAT ONLINE</button>
+    <button id="b03">ENVIE UM EMAIL</button>
+  </section>
+
+  <h2>DEIXE UMA MENSAGEM</h2>
+  <div id="linha01"></div>
+  <div id="linha02"></div>
+  <section class="form">
+    <form action="">
+      <label for="nome">
+          <span>Nome</span>
+          <input id="name" name="name">
+      </label>
+
+      <label for="email">
+          <span>Email</span>
+          <input id="email" name="email">
+      </label>
+
+      <label for="telefone">
+          <span>Telefone</span>
+          <input id="telefone" name="telefone">
+      </label>
+
+      <label for="mensagem">
+        <span>Mensagem</span>
+        <input id="mensagem" name="mensagem">
+    </label>
+
+      <input type="submit" value="ENVIAR">
+  </form>
+  </section>
 </body>
 </html>

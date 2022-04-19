@@ -1,0 +1,116 @@
+html,body{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    background:white;
+    align-items:center;
+}
+
+.title{
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+    font-family:'Dangrek';
+    font-style:normal;
+    font-weight:400;
+    font-size:10vw;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+    background:linear-gradient(90deg, #FF8B87 0%, #CA6680 35.24%, #52947C 60.21%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip:text;
+}
+
+.conteiner{
+    display:grid;
+    grid-gap:20px;
+    grid-template-columns:78vw;
+    grid-template-rows:23vw 23vw 23vw;
+    justify-content:center;
+}
+ 
+section{
+    align-items:center;
+    border-radius:22px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+}
+
+section.first{
+    background:url('../../../../assets/images/chien.jpg');
+    background-size:cover;
+    background-position:center;
+}
+
+section.second{
+    background: url('../../../../assets/images/plantes-et-animaux.jpg');
+    background-size:cover;
+    background-position:center;
+}
+
+section.third{
+    background: url('../../../../assets/images/chien-bois.jpg');
+    background-size:cover;
+    background-position:center;
+}
+
+section:hover{
+    cursor:pointer;
+    opacity:0.9;
+}
+
+section h1{
+    color:darkslategray;
+    font-family:'Dangrek';
+    font-size:3.4vw;
+    font-style:normal;
+    font-weight:400;
+    padding:0;
+    margin:0;
+}
+
+section h1:hover{
+    color:seagreen;
+}
+
+section span{
+    color:white;
+    font-family:'Dangrek';
+    font-size:2.4vw;
+    font-style:normal;
+    font-weight:400;
+}
+
+.buttons{
+    text-align:center;
+}
+
+.buttons .act{
+    background-color:#FF8B87;
+    border-radius:10px;
+    border: #FF8B87;
+    font-family: 'Dangrek';
+    font-size:2.4vw;
+    margin: 1.5vw;
+    width: 10vh;
+}
+
+.act:hover{
+    cursor:pointer;
+}
+
+.buttons .disabled{
+    background-color:#FF8B87;
+    border-radius:10px;
+    border: #FF8B87;
+    font-family: 'Dangrek';
+    font-size:2.4vw;
+    margin: 1.5vw;
+    width: 10vh;
+    cursor:not-allowed;
+    opacity:0.6;
+}

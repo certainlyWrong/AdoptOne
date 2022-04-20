@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="./src/styles/line.css">
   <link rel="stylesheet" href="./src/styles/articles_content.css">
   <link rel="stylesheet" href="./src/styles/footer.css">
+  <link rel="icon" href="./assets/logo.svg"/>
   <title>Home</title>
 </head>
 
@@ -27,12 +28,12 @@
   <header class="sticky">
     <nav>
       <div class="logo">
-        <img id="logo-img" src="./assets/logo.svg">
+        <a href="./index.html"><img id="logo-img" src="./assets/logo.svg"></a>
       </div>
       <div id="menu">
         <ul>
           <li>ANIMAIS</li>
-          <li><a href="./src/pages/artigos/artigos.html"> ARTIGOS </a></li>
+          <li><a href="./src/pages/artigos/artigos.html">ARTIGOS</a></li>
           <li>LOJA</li>
           <li>SOBRE O PROJETO</li>
           <li>CONTATO</li>
@@ -124,10 +125,12 @@
   <div class="artigos-content">
     <section>
       <h1>ARTIGOS</h1>
+      <span class="button-span">O que cachorros podem tomar?</span>
       <span class="button-span">Como cuidar de animais abondonados?</span>
-      <span class="button-span">Cachorro com problema no fígado Causas e Sintomas.</span>
-      <span class="button-span">Benefícios da ração com proteína de insetos para cachorros.</span>
-      <button class="view-article">VER MAIS ARTIGOS</button>
+      <span class="button-span">Sugestões de nomes para gatos.</span>
+      <button class="view-article">
+        <a href="./src/pages/artigos/artigos.html" style="text-decoration:under-line">VER MAIS ARTIGOS</a>
+      </button>
     </section>
     <div class="img-container">
       <img src="./assets/images/Dog 1.png">

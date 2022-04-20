@@ -76,8 +76,10 @@ section h1{
     font-weight:400;
     padding:0;
     margin:0;
+    /*
     -webkit-text-stroke-width: 0.16vw;
     -webkit-text-stroke-color:white;
+    */
 }
 
 section h1:hover{
@@ -85,13 +87,15 @@ section h1:hover{
 }
 
 section span{
-    color:#CA6680;
+    color:#FF8B87;
     font-family:'Dangrek';
     font-size:2.4vw;
     font-style:normal;
-    font-weight:400;
-    -webkit-text-stroke-width: 0.07vw;
-    -webkit-text-stroke-color:white;
+    font-weight:500;
+    /*
+    -webkit-text-stroke-width: 0.10vw;
+    -webkit-text-stroke-color:whitesmoke;
+    */
 }
 
 .title{
@@ -137,4 +141,9 @@ section span{
     width: 10vh;
     cursor:not-allowed;
     opacity:0.6;
+}
+
+a{
+    text-decoration: none;
+    color: white;
 }

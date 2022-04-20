@@ -1,6 +1,4 @@
 html,body{
-    /*padding:0;
-    margin:0;*/
     box-sizing:border-box;
     background:white;
     align-items:center;
@@ -25,7 +23,7 @@ html,body{
     display:grid;
     grid-gap:1.5vw;
     grid-template-columns:78vw;
-    grid-template-rows:15vw 23vw 23vw 23vw;
+    grid-template-rows:15vw repeat(7,23vw);
     justify-content:center;
 }
  
@@ -56,19 +54,45 @@ section.third{
     background-position:center;
 }
 
+section.fourth{
+    background: url('../../../../assets/images/des-yeux-chien.jpg');
+    background-size:cover;
+    background-position:center;
+}
+
+section.fifth{
+    background: url('../../../../assets/images/chien-noir.jpg');
+    background-size:cover;
+    background-position:center;
+}
+
+section.sixth{
+    background: url('../../../../assets/images/chat.jpg');
+    background-size:cover;
+    background-position:center;
+}
+
+section.seventh{
+    background: url('../../../../assets/images/cat.png');
+    background-size:cover;
+    background-position:center;
+}
+
 section:hover{
     cursor:pointer;
     opacity:0.9;
 }
 
 section h1{
-    color:darkslategray;
+    color: #CA6680;
     font-family:'Dangrek';
     font-size:3.4vw;
     font-style:normal;
     font-weight:400;
     padding:0;
     margin:0;
+    -webkit-text-stroke-width: 0.25vh;
+    -webkit-text-stroke-color:white;
 }
 
 section h1:hover{
@@ -76,11 +100,13 @@ section h1:hover{
 }
 
 section span{
-    color:white;
+    color:#CA6680;
     font-family:'Dangrek';
     font-size:2.4vw;
     font-style:normal;
     font-weight:400;
+    -webkit-text-stroke-width: 0.19vh;
+    -webkit-text-stroke-color:white;
 }
 
 .buttons{

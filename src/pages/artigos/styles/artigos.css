@@ -1,19 +1,17 @@
 html,body{
-    padding:0;
-    margin:0;
+    /*padding:0;
+    margin:0;*/
     box-sizing:border-box;
     background:white;
     align-items:center;
 }
 
 .title{
-    margin-top: 20vh;
-    margin-bottom: 10vh;
     font-family:'Dangrek';
     font-style:normal;
     font-weight:400;
     font-size:10vw;
-    display: flex;
+    display:flex;
     flex-direction:column;
     justify-content:center;
     text-align:center;
@@ -23,11 +21,11 @@ html,body{
     background-clip:text;
 }
 
-.conteiner{
+.conteiner{ 
     display:grid;
-    grid-gap:20px;
+    grid-gap:1.5vw;
     grid-template-columns:78vw;
-    grid-template-rows:23vw 23vw 23vw;
+    grid-template-rows:15vw 23vw 23vw 23vw;
     justify-content:center;
 }
  

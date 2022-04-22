@@ -5,6 +5,9 @@
   <img src="./assets/logoV2.svg">
 </div>
 
+[![HitCount](http://hits.dwyl.com/certainlyWrong/AdoptOne.svg)](http://hits.dwyl.com/certainlyWrong/AdoptOne)
+[![pages-build-deployment](https://github.com/certainlyWrong/AdoptOne/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/certainlyWrong/AdoptOne/actions/workflows/pages/pages-build-deployment)
+
 ## O QUE É:
 AdoptOne é um projeto para a disciplina de Programação para WEB I, do curso de sistemas de informação da  UFPI. O objetivo dá disciplina é o desenvolvimento do front-end de um site usando as tecnologias HTML5, CSS3 e Javascript.
 

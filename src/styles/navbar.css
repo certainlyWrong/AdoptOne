@@ -20,6 +20,14 @@ header nav {
   transition: 2s;
 }
 
+header nav a:visited {
+  color: white;
+}
+
+header nav a:hover {
+  color: aquamarine;
+}
+
 header {
   top: -100px;
   position: fixed;

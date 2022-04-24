@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fale Consco</title>
-  <link rel="stylesheet" href="./../../../src/styles/global_configs.css">
   <link rel="stylesheet" href="./../../styles/reset.css">
+  <link rel="stylesheet" href="./../../../src/styles/global_configs.css">
   <link rel="stylesheet" href="./../../styles/navbar.css">
   <link rel="stylesheet" href="./../../styles/footer.css">
-  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="./contact.css">
 </head>
+
 <body>
   <!-- ? NAVBAR -->
   <header class="sticky">
     <nav>
       <div class="logo">
-        <img id="logo-img" src="./../../../assets/logo.svg">
+        <a href="./../../../index.html">
+          <img id="logo-img" src="./../../../assets/logo.svg">
+        </a>
       </div>
       <div id="menu">
         <ul>
           <li>ANIMAIS</li>
-          <li>ARTIGOS</li>
+          <li><a href="./../artigos/artigos.html">ARTIGOS</a></li>
           <li>LOJA</li>
           <li><a href="./../about/about.html">SOBRE O PROJETO</a></li>
-          <li>CONTATO</li>
+          <li><a href="./../contact/contact.html">CONTATO</a></li>
         </ul>
       </div>
       <div class="login-static login-dynamic">
@@ -57,27 +61,28 @@
   <section class="form">
     <form action="">
       <label for="nome">
-          <span>Nome</span>
-          <input id="name" name="name">
+        <span>Nome</span>
+        <input id="name" name="name">
       </label>
 
       <label for="email">
-          <span>Email</span>
-          <input id="email" name="email">
+        <span>Email</span>
+        <input id="email" name="email">
       </label>
 
       <label for="telefone">
-          <span>Telefone</span>
-          <input id="telefone" name="telefone">
+        <span>Telefone</span>
+        <input id="telefone" name="telefone">
       </label>
 
       <label for="mensagem">
         <span>Mensagem</span>
         <input id="mensagem" name="mensagem">
-    </label>
+      </label>
 
       <input type="submit" value="ENVIAR">
-  </form>
+    </form>
   </section>
 </body>
+
 </html>

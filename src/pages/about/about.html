@@ -1,38 +1,43 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sobre</title>
-  <link rel="stylesheet" href="./../../styles/reset.css">
-  <link rel="stylesheet" href="./../../styles/global_configs.css">
-  <link rel="stylesheet" href="./../../styles/navbar.css">
-  <link rel="stylesheet" href="./../../styles/footer.css">
-  <link rel="stylesheet" href="./about.css">
+
+  <!-- PRINCIPAIS IMPORTS DO CSS -->
+  <link rel="stylesheet" href="../../styles/global_configs.css">
+  <link rel="stylesheet" href="../../styles/reset.css">
+
+  <!-- IMPORTS -->
+  <link rel="stylesheet" href="../../styles/navbar.css">
+  <link rel="stylesheet" href="../../styles/footer.css">
+  <link rel="stylesheet" href="./styles/mission.css">
+  <link rel="stylesheet" href="./styles/title.css">
+  <link rel="stylesheet" href="./styles/members.css">
+  <link rel="stylesheet" href="./styles/grid_questions.css">
+
+  <title>About</title>
 </head>
 
 <body>
-  <!-- ? NAVBAR -->
   <header class="sticky">
     <nav>
       <div class="logo">
-        <a href="../../../index.html">
-          <img id="logo-img" src="./../../../assets/logo.svg">
-        </a>
+        <a href="./../../../index.html"><img id="logo-img" src="./../../../assets/logo.svg"></a>
       </div>
       <div id="menu">
         <ul>
           <li>ANIMAIS</li>
-          <li><a href="../artigos/artigos.html">ARTIGOS</a></li>
+          <li><a href="./../../../src/pages/artigos/artigos.html">ARTIGOS</a></li>
           <li>LOJA</li>
-          <li><a href="./../about/about.html">SOBRE O PROJETO</a></li>
-          <li>CONTATO</li>
+          <li><a href="./../../../src/pages/about/about.html">SOBRE O PROJETO</a></li>
+          <li><a href="./../../../src/pages/contact/contact.html">CONTATO</a></li>
         </ul>
       </div>
       <div class="login-static login-dynamic">
-        <a href="./../cadastro/cadastro.html"><button class="button-login">ENTRAR</button></a>
+        <a href="./../../../src/pages/cadastro/cadastro.html"><button class="button-login">ENTRAR</button></a>
         <div class="icon-user">
           <img src="./../../../assets/icons/cat-icon.svg">
         </div>
@@ -45,49 +50,68 @@
     </nav>
   </header>
 
-  <section class="imagem" id="img01">
-    <p>
-      NOSSA MISSAO <br>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis animi obcaecati molestias est itaque tempore
-      sequi neque veniam fugiat, quis labore voluptatibus. Provident, nihil? Sequi
-      enim eaque. Lorem ipsum, dolor sit amet consectetur
-      adipisicing elit. Architecto quasi illum ipsum error ab nulla minima eum nostrum. Culpa laboriosam
-      maiores, provident eos quos fuga eum numquam aut corrupti!
-      Lorem ipsum dolor sit amet
-    </p>
-  </section>
-
-  <h1>QUEM SOMOS?</h1>
-  <section class="time">
-    <div id="c01"></div>
-    <div id="img01"></div>
-    <div id="s01">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et illum repudiandae necessitatibus fugit, nostrum
-        sint iure dolore praesentium soluta odit tempora, porro laudantium provident est rem adipisci odio. Facere,
-        amet!</p>
-    </div>
-    <div id="c02"></div>
-    <div id="img02"></div>
-    <div id="s02">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum consectetur delectus repellendus eum cumque
-        ullam commodi placeat dolorem totam veniam aperiam alias sunt, ratione, facilis maiores similique</p>
-    </div>
-    <div id="c03"></div>
-    <div id="img03"></div>
-    <div id="s03">
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat molestias iusto recusandae repellat incidunt?
-        Quas nam, adipisci veritatis quis voluptatum fugit magni, quibusdam eligendi eius voluptates iusto, odit
-        repellat labore.</p>
+  <section class="mission">
+    <img src="./../../../assets/images/closeup-shot-snouts-cute-dog-cat-sitting-cheek-cheek.jpg">
+    <div class="overlay">
+      <div>
+        <h1>NOSSA MISSÃO</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Nam mattis eu tellus et commodo. Vestibulum eget nibh bibendum nibh
+          volutpat tristique porta sed tellus. Integer interdum po
+        </p>
+      </div>
     </div>
   </section>
 
-  <h1>PERGUNTAS FREQUENTES</h1>
-  <section class="perguntas">
-    <div id="q01"></div>
-    <div id="q02"></div>
-    <div id="q03"></div>
-    <div id="q04"></div>
+  <h1 class="title">QUEM SOMOS?</h1>
+
+  <section class="members">
+    <div class="member1">
+      <img src="../../../assets/images/member1.jpeg">
+      <div class="text">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis eu tellus et commodo. Vestibulum eget nibh
+          bibendum nibh volutpat tristique porta sed tellus. Integer interdum po
+        </p>
+      </div>
+    </div>
+
+    <div class="member2">
+      <img src="../../../assets/images/member2.jpg">
+      <div class="text">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis eu tellus et commodo. Vestibulum eget nibh
+          bibendum nibh volutpat tristique porta sed tellus. Integer interdum po
+        </p>
+      </div>
+    </div>
+    <div class="member3">
+      <img src="https://cupulatrovao.com.br/wp-content/uploads/2021/06/Sota-de-Horimiya-1024x812.jpg">
+      <div class="text">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis eu tellus et commodo. Vestibulum eget nibh
+          bibendum nibh volutpat tristique porta sed tellus. Integer interdum po
+        </p>
+      </div>
+    </div>
   </section>
+
+  <h1 class="title">PERGUNTAS FREQUENTES</h1>
+
+  <!-- ? GRID -->
+  <div class="grid-container">
+    <main class="cards">
+      <section class="column">
+      </section>
+      <section class="column">
+      </section>
+      <section class="column">
+      </section>
+      <section class="column">
+      </section>
+    </main>
+  </div>
 
   <!-- ? FOOTER DA PAG -->
   <footer class="footer">
@@ -97,9 +121,9 @@
           <h4>AdoptOne</h4>
           <ul>
             <li><a href="#">Contato</a></li>
-            <li><a href="./../../../index.html">Home</a></li>
+            <li><a href="#">Home</a></li>
             <li><a href="#">Login</a></li>
-            <li><a href="#">Sobre o Projeto</a></li>
+            <li><a href="./../about/about.html">Sobre o Projeto</a></li>
           </ul>
         </div>
         <div class="coluna01">
@@ -117,7 +141,7 @@
             <li><a href="#">Adoção</a></li>
             <li><a href="#">Animais Desaperecidos</a></li>
             <li><a href="#">Apadrinhamento</a></li>
-            <li><a href="#">Artigos</a></li>
+            <li><a href="./../artigos/artigos.html">Artigos</a></li>
           </ul>
         </div>
         <div class="coluna01">
@@ -133,6 +157,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="./../../scripts/navbar.js"></script>
 </body>
 
 </html>

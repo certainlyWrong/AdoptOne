@@ -5,12 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fale Consco</title>
+  <title>Fale Conosco</title>
   <link rel="stylesheet" href="./../../styles/reset.css">
   <link rel="stylesheet" href="./../../../src/styles/global_configs.css">
   <link rel="stylesheet" href="./../../styles/navbar.css">
   <link rel="stylesheet" href="./../../styles/footer.css">
   <link rel="stylesheet" href="./contact.css">
+  <link rel="icon" href="../../../assets/logo.svg"/>
 </head>
 
 <body>
@@ -55,34 +56,92 @@
     <button id="b03">ENVIE UM EMAIL</button>
   </section>
 
-  <h2>DEIXE UMA MENSAGEM</h2>
-  <div id="linha01"></div>
-  <div id="linha02"></div>
-  <section class="form">
-    <form action="">
-      <label for="nome">
-        <span>Nome</span>
-        <input id="name" name="name">
-      </label>
-
-      <label for="email">
-        <span>Email</span>
-        <input id="email" name="email">
-      </label>
-
-      <label for="telefone">
-        <span>Telefone</span>
-        <input id="telefone" name="telefone">
-      </label>
-
-      <label for="mensagem">
-        <span>Mensagem</span>
-        <input id="mensagem" name="mensagem">
-      </label>
-
-      <input type="submit" value="ENVIAR">
-    </form>
-  </section>
+  
+  <div class="corpo">
+    <div class="title">
+      <div id="linha"></div>
+      <h2>DEIXE UMA MENSAGEM</h2>
+      <div id="linha"></div>
+    </div>
+    
+    <div class="conteiner">
+      
+      <form>
+        <div class="wrapper">
+          <div class="box">
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name" required>
+            
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="box">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required>
+            
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="box">
+            <label for="telefone">Telefone</label>
+            <input type="text" name="telefone" id="telefone" required>
+            
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="box">
+            <label for="mes">Mensagem</label>
+            <textarea maxlength="400" id="mes" required style="border:solid 5px #bbbbb8fc;"></textarea>
+          </div>
+        </div>
+        <a href="../../../index.html"><input type="submit" value=" ENVIAR "></a>
+      </form>
+    </div>
+    
+  </div>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="componentes">
+      <div class="linha">
+        <div class="coluna01">
+          <h4>AdoptOne</h4>
+          <ul>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="./src/pages/about/about.html">Sobre o Projeto</a></li>
+          </ul>
+        </div>
+        <div class="coluna01">
+          <h4>Projeto</h4>
+          <ul>
+            <li><a href="#">Quem Somos</a></li>
+            <li><a href="#">Suporte</a></li>
+            <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="#">Termos de Uso</a></li>
+          </ul>
+        </div>
+        <div class="coluna01">
+          <h4>Animais</h4>
+          <ul>
+            <li><a href="#">Adoção</a></li>
+            <li><a href="#">Animais Desaperecidos</a></li>
+            <li><a href="#">Apadrinhamento</a></li>
+            <li><a href="./src/pages/artigos/artigos.html">Artigos</a></li>
+          </ul>
+        </div>
+        <div class="coluna01">
+          <h4>Redes Sociais</h4>
+          <ul>
+            <div class="social">
+              <li><a href="#"> <img src="../../../assets/icons/Facebook.svg" alt=""></a></li>
+              <li><a href="#"> <img src="../../../assets/icons/Instagram.svg" alt=""></a></li>
+              <li><a href="#"> <img src="../../../assets/icons/Twitter.svg" alt=""></a></li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
-
 </html>

@@ -1,0 +1,24 @@
+.title{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family:'Dangrek';
+  font-style:normal;
+  font-weight:400;
+  font-size: calc(4vw + 1rem);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  text-align:center;
+  margin: calc(1rem + 3vw);
+  background:linear-gradient(90deg, #FF8B87 0%, #CA6680 35.24%, #52947C 60.21%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip:text;
+  animation: alternate;
+  transition: 0.5s;
+}
+

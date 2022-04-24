@@ -1,0 +1,47 @@
+
+.cards {
+  padding: 0 5vw 5vw 5vw;
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr)); */
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  justify-content: stretch;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  animation: alternate;
+  transition: 2s;
+}
+
+.column {
+  padding: 10px;
+  justify-content: space-around;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border: none;
+  background-color: #FF8B87;
+  border-radius: 25px;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+  place-self: center;
+  margin: 0.1rem;
+  animation: alternate;
+  transition: 0.4s;
+}
+
+.column:hover {
+  transition-delay: 1s;
+  transform: translateY(-20px);
+  transition: transform 0.3s ease-out;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.50);
+}
+
+@media (max-width: 1200px) {
+  .cards {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}

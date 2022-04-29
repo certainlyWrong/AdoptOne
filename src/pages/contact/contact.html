@@ -12,6 +12,9 @@
   <link rel="stylesheet" href="./../../styles/footer.css">
   <link rel="stylesheet" href="./contact.css">
   <link rel="icon" href="../../../assets/logo.svg"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -85,7 +88,19 @@
           <div class="box">
             <label for="telefone">Telefone</label>
             <input type="text" name="telefone" id="telefone" required>
-            
+          </div>
+        </div>
+        <div class="wrapper">
+          
+          <div class="box">
+            <label for="telefone">Selecione o tipo da mensagem:</label>
+            <select name="type" required>
+              <option value="">---</option>
+              <option value="op1">Elogio</option>
+              <option value="op2">Dúvida</option>
+              <option value="op3">Crítica</option>
+              <option value="op4">Sugestão</option>
+            </select>
           </div>
         </div>
         <div class="wrapper">

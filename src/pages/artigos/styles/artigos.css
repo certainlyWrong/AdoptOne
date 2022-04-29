@@ -1,149 +1,151 @@
-html,body{
-    box-sizing:border-box;
-    background:white;
-    align-items:center;
+html,
+body {
+    box-sizing: border-box;
+    background: white;
+    align-items: center;
 }
 
-.conteiner{ 
-    display:grid;
-    grid-gap:1.5vw;
-    grid-template-columns:78vw;
-    grid-template-rows:15vw repeat(7,23vw);
-    justify-content:center;
-}
- 
-section{
-    align-items:center;
-    border-radius:22px;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    text-align:center;
+.conteiner {
+    display: grid;
+    grid-gap: 1.5vw;
+    grid-template-columns: 78vw;
+    grid-template-rows: 15vw repeat(7, 23vw);
+    justify-content: center;
 }
 
-section.first{
-    background:url('../../../../assets/images/chien.jpg');
-    background-size:cover;
-    background-position:center;
+section {
+    align-items: center;
+    border-radius: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
-section.second{
+section.first {
+    background: url('../../../../assets/images/chien.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+section.second {
     background: url('../../../../assets/images/plantes-et-animaux.jpg');
-    background-size:cover;
-    background-position:center;
+    background-size: cover;
+    background-position: center;
 }
 
-section.third{
+section.third {
     background: url('../../../../assets/images/chien-bois.jpg');
-    background-size:cover;
-    background-position:center;
+    background-size: cover;
+    background-position: center;
 }
 
-section.fourth{
+section.fourth {
     background: url('../../../../assets/images/des-yeux-chien.jpg');
-    background-size:cover;
-    background-position:center;
+    background-size: cover;
+    background-position: center;
 }
 
-section.fifth{
+section.fifth {
     background: url('../../../../assets/images/chien-noir.jpg');
-    background-size:cover;
-    background-position:center;
+    background-size: cover;
+    background-position: center;
 }
 
-section.sixth{
+section.sixth {
     background: url('../../../../assets/images/chat.jpg');
-    background-size:cover;
-    background-position:center;
+    background-size: cover;
+    background-position: center;
 }
 
-section.seventh{
+section.seventh {
     background: url('../../../../assets/images/cat.png');
-    background-size:cover;
-    background-position:center;
+    background-size: cover;
+    background-position: center;
 }
 
-section:hover{
-    cursor:pointer;
-    opacity:0.9;
+section:hover {
+    cursor: pointer;
+    opacity: 0.9;
 }
 
-section h1{
+section h1 {
     color: #CA6680;
-    font-family:'Dangrek';
-    font-size:3.4vw;
-    font-style:normal;
-    font-weight:400;
-    padding:0;
-    margin:0;
+    font-family: 'Dangrek';
+    font-size: 3.4vw;
+    font-style: normal;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     /*
-    -webkit-text-stroke-width: 0.16vw;
+    -webkit-text-stroke-width: 1.6px;
     -webkit-text-stroke-color:white;
     */
 }
 
-section h1:hover{
-    color:seagreen;
+section h1:hover {
+    color: seagreen;
 }
 
-section span{
-    color:#FF8B87;
-    font-family:'Dangrek';
-    font-size:2.4vw;
-    font-style:normal;
-    font-weight:500;
+section span {
+    color: #FF8B87;
+    font-family: 'Dangrek';
+    font-size: 2.4vw;
+    font-style: normal;
+    font-weight: 500;
     /*
     -webkit-text-stroke-width: 0.10vw;
     -webkit-text-stroke-color:whitesmoke;
     */
 }
 
-.title{
-    font-family:'Dangrek';
-    font-style:normal;
-    font-weight:400;
-    font-size:10vw;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    text-align:center;
-    background:linear-gradient(90deg, #FF8B87 0%, #CA6680 35.24%, #52947C 60.21%);
+.title {
+    font-family: 'Dangrek';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(90deg, #FF8B87 0%, #CA6680 35.24%, #52947C 60.21%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip:text;
+    background-clip: text;
 }
 
-.buttons{
-    text-align:center;
+.buttons {
+    text-align: center;
 }
 
-.buttons .act{
-    background-color:#FF8B87;
-    border-radius:10px;
+.buttons .act {
+    background-color: #FF8B87;
+    border-radius: 10px;
     border: #FF8B87;
     font-family: 'Dangrek';
-    font-size:2.4vw;
+    font-size: 2.4vw;
     margin: 1.5vw;
     width: 10vh;
 }
 
-.act:hover{
-    cursor:pointer;
+.act:hover {
+    cursor: pointer;
 }
 
-.buttons .disabled{
-    background-color:#FF8B87;
-    border-radius:10px;
+.buttons .disabled {
+    background-color: #FF8B87;
+    border-radius: 10px;
     border: #FF8B87;
     font-family: 'Dangrek';
-    font-size:2.4vw;
+    font-size: 2.4vw;
     margin: 1.5vw;
     width: 10vh;
-    cursor:not-allowed;
-    opacity:0.6;
+    cursor: not-allowed;
+    opacity: 0.6;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
 }

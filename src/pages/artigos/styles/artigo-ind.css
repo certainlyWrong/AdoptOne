@@ -2,8 +2,8 @@
     display:grid;
     grid-gap:1.5vw;
     grid-template-columns:78vw;
-    grid-template-rows:23vw;
     justify-content:center;
+    justify-items: center;
     padding:5vh;
 }
  
@@ -22,28 +22,26 @@ section.first{
     background-position:center;
 }
 
-section h1{
-    color: #CA6680;
-    font-family:'Dangrek';
-    font-size:3.4vw;
+h1{
+    text-align: center; 
+    font:2.8125rem 'Nunito',sans-serif;
+    color:#CA6680;
     font-style:normal;
     font-weight:400;
-    padding:0;
-    margin:0;
     /*
     -webkit-text-stroke-width: 0.16vw;
     -webkit-text-stroke-color:white;
     */
 }
 
-section h1:hover{
+h1:hover{
     color:seagreen;
 }
 
-section span{
+span{
+    font:1.8125rem 'Nunito',sans-serif;
+    text-align: center; 
     color:#FF8B87;
-    font-family:'Dangrek';
-    font-size:2.4vw;
     font-style:normal;
     font-weight:500;
     /*
@@ -52,17 +50,27 @@ section span{
     */
 }
 
-p{
-    font-family: 'Montserrat';
-    font-style: bold;
-    font-weight: 700px;
-    font-size:25px;
-    text-align:justify;
-    padding:3vh;
+.image-cover img{
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    justify-content:center;
 }
+
+p{
+    font:1.25rem/2.25rem 'Nunito',sans-serif;
+    text-align:justify;
+    margin-bottom:1.5625rem;
+    padding-top:0.6875rem; 
+    display:block;
+  
+}
+
 .images img{
-    width:40px;
-    height:40px;
+    width:50px;
+    height:50px;
+    margin-left: 10vh;
+    transition: 0.3s ease;
 
 }
 .images{
@@ -70,6 +78,38 @@ p{
     grid-gap:1.5vw;
     grid-template-rows:5vw;
     justify-content:center;
+    text-align:center;
+    margin: 5vh;
     padding:5vh;
+    
 }
 
+.images .coeur img{
+    margin-left:0;
+}
+
+.images .coeur img:hover{
+    cursor:pointer;
+    background-image: url('../../../../assets/icons/Coeur-Deux.svg');
+}
+
+.images .conv img:hover{
+    cursor:pointer;
+    background-image: url('../../../../assets/icons/Conv-Deux.svg');
+}
+
+.images .env img:hover{
+    cursor:pointer;
+}
+
+.conteiner .text{
+    background:#FF8B87;
+    line-height: 2.25rem;
+}
+
+
+@media (max-width:520px){
+    p{
+        font-size:0.9rem;
+    }
+}

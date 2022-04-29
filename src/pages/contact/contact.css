@@ -160,3 +160,15 @@ section.botoes #b01, section.botoes #b02, section.botoes #b03{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
 }
+
+option{
+    font-family:'Nunito';
+    font-size:1rem;
+    background-color:#CA6680;
+}
+
+select {
+    font-family: 'Nunito';
+    font-size: 0.9rem;
+    padding: 2px 5px;
+}

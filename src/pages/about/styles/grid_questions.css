@@ -24,13 +24,18 @@
   width: 200px;
   height: 200px;
   border: none;
-  background-color: #FF8B87;
   border-radius: 25px;
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
   place-self: center;
   margin: 0.1rem;
   animation: alternate;
   transition: 0.4s;
+}
+
+.column>p{
+  font-family: 'Dangrek';
+  font-size: 2rem;
+  color: white;
 }
 
 .column:hover {
@@ -44,4 +49,20 @@
   .cards {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
+}
+
+.column.un{
+  background-color: #FF8B87;
+}
+
+.column.deux{
+  background-color: #DF7583;
+}
+
+.column.trois{
+  background-color: #B66E80;
+}
+
+.column.quatre{
+  background-color: #6AA08D;
 }

@@ -60,9 +60,8 @@ span{
 p{
     font:1.25rem/2.25rem 'Nunito',sans-serif;
     text-align:justify;
-    margin-bottom:1.5625rem;
-    padding-top:0.6875rem; 
-    display:block;
+    /*margin-bottom:1.5625rem;*/
+    padding-top:0.6875rem;
   
 }
 
@@ -103,7 +102,6 @@ p{
 }
 
 .conteiner .text{
-    background:#FF8B87;
     line-height: 2.25rem;
 }
 

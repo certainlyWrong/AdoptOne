@@ -29,6 +29,7 @@ ul {
 .coluna01 {
   padding: 0 15px;
   width: 25%;
+  text-align: left;
 }
 
 .coluna01 h4 {
@@ -99,7 +100,6 @@ ul {
   line-height: 40px;
   list-style: none;
   margin: 0px 10px 10px 0px;
-  text-align: center;
   transition: all 0.5s ease;
   width: 40px;
 

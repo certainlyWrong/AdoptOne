@@ -59,12 +59,13 @@ span{
 
 p{
     font:1.25rem/2.25rem 'Nunito',sans-serif;
-    font-style:bold;
-    font-weight:700px;
-    font-size:1.25rem;
     text-align:justify;
-    padding:3vh;
+    margin-bottom:1.5625rem;
+    padding-top:0.6875rem; 
+    display:block;
+  
 }
+
 .images img{
     width:50px;
     height:50px;
@@ -99,4 +100,16 @@ p{
 
 .images .env img:hover{
     cursor:pointer;
+}
+
+.conteiner .text{
+    background:#FF8B87;
+    line-height: 2.25rem;
+}
+
+
+@media (max-width:520px){
+    p{
+        font-size:0.9rem;
+    }
 }

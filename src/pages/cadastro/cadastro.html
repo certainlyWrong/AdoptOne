@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./../../styles/reset.css">
     <link rel="stylesheet" href="./../../styles/global_configs.css">
     <link rel="stylesheet" href="./styles/cadastro.css">
+    <script defer src="../../scripts/cookies.js" defer></script>
 </head>
 <body>
     <main>
@@ -36,20 +37,20 @@
 
             <label for="email">
                 <span>Email</span>
-                <input id="email" name="email">
+                <input id="email" class="email" type="email" name="email">
             </label>
 
             <label for="senha">
                 <span>Senha</span>
                 <input type="password" id="senha" name="senha">
             </label>
-
-            <input type="submit" value="Entrar">
+            <input type="submit" id="bkbn" value="Entrar">
         </form>
     </main>
     <section class="images">
         <img src="./../../../assets/icons/desktop-computer (1).png" alt="Computer">
         <div class="circle"></div>
     </section>
+    
 </body>
 </html>

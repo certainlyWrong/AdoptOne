@@ -108,6 +108,10 @@ header.sticky {
   transition: 0.4s;
 }
 
+.icon-user a {
+  margin: auto;
+}
+
 .icon-user img {
   margin: auto;
 }

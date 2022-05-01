@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../../styles/navbar.css">
   <link rel="stylesheet" href="./styles/banner_missing.css">
   <link rel="stylesheet" href="./styles/posts.css">
+  <link rel="stylesheet" href="./styles/form.css">
 
 </head>
 
@@ -70,32 +71,38 @@
     </section>
   </div>
 
-  <div class="container_form">
-    <form class="missing_animals_form">
-      <div class="col1">
-        <label for="idname">Nome</label>
-        <input type="text" id="idname">
-        <label for="idemail">Email</label>
-        <input type="email" id="idemail">
-        <label for="idtel">Telefone</label>
-        <input type="tel" id="idtel">
-        <label for="idreco">Oferecer recompensa?</label>
-        <div class="container_option">
-          <button class="yes">SIM</button>
-          <button class="no">NÃO</button>
+  <div class="container_center_form">
+    <div class="container_form">
+      <form class="missing_animals_form">
+        <div class="container_inputs">
+          <div class="col1">
+            <label for="idname">Nome</label>
+            <input type="text" id="idname">
+            <label for="idemail">Email</label>
+            <input type="email" id="idemail">
+            <label for="idtel">Telefone</label>
+            <input type="tel" id="idtel">
+            <label for="idreco">Oferecer recompensa?</label>
+            <div class="container_option">
+              <input type="button" value="SIM">
+              <input type="button" value="NAO">
+            </div>
+            <label for="idlink">Envie o link com tres imagens do animal</label>
+            <input type="url" id="idlink">
+          </div>
+          <div class="col2">
+            <label for="idname_animal">Nome do animal</label>
+            <input type="text" id="idname_animal">
+            <label for="idinfor_animal">Informacoes do animal</label>
+            <textarea maxlength="400" id="idinfor_animal" cols="30" rows="10"></textarea>
+            <label for="idinfor_desa">Informacoes do desaparecimento</label>
+            <textarea maxlength="400" id="idinfor_desa" cols="30" rows="10"></textarea>
+          </div>
         </div>
-      </div>
-      <div class="col2">
-        <label for="idname_animal">Nome do animal</label>
-        <input type="text" id="idname_animal">
-        <label for="idinfor_animal">Informações do animal</label>
-        <input type="text" id="idinfor_animal">
-        <label for="idinfor_desa">Informações do desaparecimento</label>
-        <input type="text" id="idinfor_desa">
-      </div>
-    </form>
+        <input type="submit" id="submit_desa">
+      </form>
+    </div>
   </div>
-
   <script src="../../scripts/navbar.js"></script>
 </body>
 

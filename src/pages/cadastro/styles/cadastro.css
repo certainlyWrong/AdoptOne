@@ -118,6 +118,7 @@ main form input[type="submit"] {
 }
 
 main form input[type="submit"]:hover {
+  cursor:pointer;
   background-color: #D57A66;
   color: white;
 }

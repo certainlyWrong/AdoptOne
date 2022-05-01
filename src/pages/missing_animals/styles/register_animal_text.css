@@ -1,0 +1,44 @@
+
+#register_animal_text {
+  margin: 1rem auto 1rem auto;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  animation: alternate;
+  transition: 2s;
+}
+
+#register_animal_text h1 {
+  font-family: dangrek;
+  font-size: 3rem;
+  animation: alternate;
+  transition: 2s;
+}
+
+#register_animal_text img {
+  width: 5vw;
+  animation: alternate;
+  transition: 2s;
+}
+
+@media (max-width:900px) {
+  #register_animal_text img {
+    display: none;
+  }
+
+  #register_animal_text h1 {
+    font-size: xx-large;
+  }
+}
+
+@media (max-width:550px) {
+  #register_animal_text img {
+    display: none;
+  }
+
+  #register_animal_text h1 {
+    font-size: large;
+  }
+}
+

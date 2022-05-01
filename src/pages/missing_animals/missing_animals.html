@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>missing animals</title>
+
+  <!-- PRINCIPAIS IMPORTS DO CSS -->
+  <link rel="stylesheet" href="../../styles/global_configs.css">
+  <link rel="stylesheet" href="../../styles/reset.css">
+
+  <!-- IMPORTS -->
+  <link rel="stylesheet" href="../../styles/navbar.css">
+  <link rel="stylesheet" href="../../styles//footer.css">
+  <link rel="stylesheet" href="./styles/banner_missing.css">
+  <link rel="stylesheet" href="./styles/posts.css">
+  <link rel="stylesheet" href="./styles/form.css">
+  <link rel="stylesheet" href="./styles/register_animal_text.css">
+
+</head>
+
+<body>
+  <!-- ? NAVBAR -->
+  <header class="sticky">
+    <nav>
+      <div class="logo">
+        <a href="../../../index.html"><img id="logo-img" src="../../../assets/logo.svg"></a>
+      </div>
+      <div id="menu">
+        <ul>
+          <li>ANIMAIS</li>
+          <li><a href="../artigos/artigos.html">ARTIGOS</a></li>
+          <li>LOJA</li>
+          <li><a href="../about/about.html">SOBRE O PROJETO</a></li>
+          <li><a href="../contact/contact.html">CONTATO</a></li>
+        </ul>
+      </div>
+      <div class="login-static login-dynamic">
+        <a href="../cadastro/cadastro.html"><button class="button-login">ENTRAR</button></a>
+        <div class="icon-user">
+          <a class="user_next" href="../user_page/user_page.html"><img src="../../../assets/icons/cat-icon.svg"></a>
+        </div>
+      </div>
+      <div id="button-menu-mobile" class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="banner_missing">
+    <img src="../../../assets/images/cute-smiley-dog-holding-empty-banner.jpg">
+    <div class="banner_missing_overlay">
+      <div class="container">
+        <h1>SEU PET FUGIU?</h1>
+        <p>A gente te ajuda!</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="posts">
+    <section>
+      <img src="../../../assets/images/Cartaz procura-se Animal gato desaparecido .png" alt="">
+    </section>
+    <section>
+      <img src="../../../assets/images/Panfleto cartaz animal pet desaparecido.png" alt="">
+    </section>
+    <section>
+      <img src="../../../assets/images/Cartaz procura-se Animal gato desaparecido .png" alt="">
+    </section>
+  </div>
+
+  <div id="register_animal_text">
+    <img src="../../../assets/icons/missing.png">
+    <h1>CADASTRE UM ANIMAL DESAPARECIDO</h1>
+    <img src="../../../assets/icons/missing.png">
+  </div>
+
+  <div class="container_center_form">
+    <div class="container_form">
+      <form class="missing_animals_form">
+        <div class="container_inputs">
+          <div class="col1">
+            <label for="idname">Nome</label>
+            <input type="text" id="idname">
+            <label for="idemail">Email</label>
+            <input type="email" id="idemail">
+            <label for="idtel">Telefone</label>
+            <input type="tel" id="idtel">
+            <label for="idreco">Oferecer recompensa?</label>
+            <div class="container_option">
+              <input type="button" value="SIM">
+              <input type="button" value="NAO">
+            </div>
+            <label for="idlink">Envie o link com tres imagens do animal</label>
+            <input type="url" id="idlink">
+          </div>
+          <div class="col2">
+            <label for="idname_animal">Nome do animal</label>
+            <input type="text" id="idname_animal">
+            <label for="idinfor_animal">Informacoes do animal</label>
+            <textarea maxlength="400" id="idinfor_animal" cols="30" rows="10"></textarea>
+            <label for="idinfor_desa">Informacoes do desaparecimento</label>
+            <textarea maxlength="400" id="idinfor_desa" cols="30" rows="10"></textarea>
+          </div>
+        </div>
+        <input type="submit" id="submit_desa">
+      </form>
+    </div>
+  </div>
+
+  <!-- ? FOOTER DA PAG -->
+  <footer class="footer">
+    <div class="componentes">
+      <div class="linha">
+        <div class="coluna01">
+          <h4>AdoptOne</h4>
+          <ul>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="./src/pages/about/about.html">Sobre o Projeto</a></li>
+          </ul>
+        </div>
+        <div class="coluna01">
+          <h4>Projeto</h4>
+          <ul>
+            <li><a href="#">Quem Somos</a></li>
+            <li><a href="#">Suporte</a></li>
+            <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="#">Termos de Uso</a></li>
+          </ul>
+        </div>
+        <div class="coluna01">
+          <h4>Animais</h4>
+          <ul>
+            <li><a href="#">Adoção</a></li>
+            <li><a href="#">Animais Desaperecidos</a></li>
+            <li><a href="#">Apadrinhamento</a></li>
+            <li><a href="./src/pages/artigos/artigos.html">Artigos</a></li>
+          </ul>
+        </div>
+        <div class="coluna01">
+          <h4>Redes Sociais</h4>
+          <ul>
+            <div class="social">
+              <li><a href="#"> <img src="../../../assets/icons/Facebook.svg" alt=""></a></li>
+              <li><a href="#"> <img src="../../../assets/icons/Twitter.svg" alt=""></a></li>
+              <li><a href="#"> <img src="../../../assets/icons/Instagram.svg" alt=""></a></li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../scripts/navbar.js"></script>
+</body>
+
+</html>

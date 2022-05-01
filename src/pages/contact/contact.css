@@ -1,55 +1,56 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
 }
 
 .corpo{
-    min-height:100vh;
+    align-items:center;
     display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
+    flex-direction:column;
+    justify-content:center;
+    min-height:100vh;
 }
 
 .conteiner{
-    width:80%;
+    align-items:center;
     display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
+    flex-direction:column;
+    justify-content:center;
+    width:80%;
 }
 
 form{
+    align-items:center;
     display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-h2{
-    color: gray;
-    font-family: 'Dangrek', 'Courier New', Courier, monospace;
-    font-size: 3vw;
-    text-align: center;
-    margin-bottom: 30px;
-    margin: 0;
-}
-
-#linha{
-    width: 18.7vh;
-    border: 1px solid rgba(0,0,0,0.5);
-    margin: 2vh;
+    flex-direction:column;
+    justify-content:center;
 }
 
 .corpo .title{
+    align-items:center;
     display:flex;
     flex-direction:row;
-    padding: 20px;
-    align-items: center;
-    justify-content: center; 
+    justify-content:center; 
+    margin:2vh;
+    padding:2vh;
+    text-align:center;
+}
+
+h2{
+    align-self: center;
+    color:gray;
+    font-family:'Concert One';
+    font-size:2.0rem;
+    margin: 0;
+    padding:0;
+    text-align:center;  
+}
+
+#linha{
+    border:2px solid rgba(0,0,0,0.5);
+    width:18.7vh;
+    margin: 1vh;
 }
 
 .wrapper{
@@ -121,11 +122,11 @@ h2{
 
 h1{
     font-family: 'Dangrek', 'Courier New', Courier, monospace;
-    text-align: center;
-    font-weight: 400;
-    font-size: 90px;
-    padding-top: 14rem;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size:90px;
+    font-weight:400;
+    padding-top:14rem;
+    text-align:center;
+    text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 section.imagem{
@@ -142,23 +143,23 @@ section#img01 {
 }
 
 section.botoes{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 2rem;
+    align-items:center;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    padding:2rem 2rem;
 }
 
 section.botoes #b01, section.botoes #b02, section.botoes #b03{
+    background-color:white;
+    border-radius:15px;
+    border:none;
+    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family:'Concert One', 'Courier New', Courier, monospace;
     font-size: 1rem;
-    margin-left: 2rem;
-    font-family: 'Dangrek', 'Courier New', Courier, monospace;
-    width: 400px;
     height: 70px;
-    background-color: white;
-    border: none;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
+    margin-left: 2rem;
+    width: 400px;
 }
 
 option{
@@ -168,7 +169,42 @@ option{
 }
 
 select {
-    font-family: 'Nunito';
-    font-size: 0.9rem;
-    padding: 2px 5px;
+    font-family:'Nunito';
+    font-size:0.9rem;
+    padding:2px 5px;
+}
+
+@media (max-width:700px){
+    h1{
+        font-size:5rem;
+    }
+    h2{
+        font:1.5rem/2rem 'Concert One';
+    }
+    #linha{
+        display:none;
+    }
+    section.botoes{
+        align-items:center;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        padding:2rem 2rem;
+    }
+    section.botoes #b01, section.botoes #b02, section.botoes #b03{
+        height:70px;
+        width:200px;
+        margin-bottom:2rem;
+        margin-left:0rem;
+    }
+    
+}
+section.botoes #b01:hover{
+    cursor:pointer;
+    background:#52947C;
+
+}
+section.botoes #b02:hover, section.botoes #b03:hover{
+    background:grey;
+    cursor:not-allowed;
 }

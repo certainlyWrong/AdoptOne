@@ -1,0 +1,42 @@
+
+.banner_missing {
+  width: 100%;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #D57A66;
+}
+
+.banner_missing img {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  object-fit: cover;
+}
+
+.banner_missing_overlay {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 430px;
+  background-color: rgba(0, 0, 0, 0.438);
+  color: white;
+}
+
+.banner_missing_overlay div {
+  margin: 1rem;
+}
+
+.banner_missing_overlay div h1 {
+  font-family: Dangrek;
+  font-weight: bold;
+  font-size: calc(8vw + 0.8rem);
+}
+
+.banner_missing_overlay div p {
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: x-large;
+}
+

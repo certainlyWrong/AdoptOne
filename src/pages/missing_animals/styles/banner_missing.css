@@ -6,6 +6,8 @@
   flex-direction: column;
   text-align: center;
   background-color: #D57A66;
+  animation: alternate;
+  transition: 2s;
 }
 
 .banner_missing img {
@@ -13,15 +15,19 @@
   height: 100%;
   margin: auto;
   object-fit: cover;
+  animation: alternate;
+  transition: 2s;
 }
 
 .banner_missing_overlay {
   width: 100%;
   height: auto;
   position: absolute;
-  top: 430px;
+  top: 420px;
   background-color: rgba(0, 0, 0, 0.438);
   color: white;
+  animation: alternate;
+  transition: 2s;
 }
 
 .banner_missing_overlay div {
@@ -40,3 +46,12 @@
   font-size: x-large;
 }
 
+@media (max-width: 550px) {
+  .banner_missing {
+    height: 300px;
+  }
+
+  .banner_missing_overlay {
+    top: 230px;
+  }
+}

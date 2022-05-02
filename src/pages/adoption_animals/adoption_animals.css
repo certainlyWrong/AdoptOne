@@ -137,8 +137,8 @@ section.animais > h1{
 }
   
 .card img {
-    width: calc(0.5rem + 10vw);
-    height: calc(0.5rem + 15vw);
+    width: calc(50%);
+    height: calc(50%);
     margin: auto;
     border-radius: 100%;
     object-fit: cover;
@@ -165,6 +165,94 @@ section.animais > h1{
 @media (max-width: 1280px) {
     #animais-cards {
         grid-template-columns: repeat(auto-fill, 200px);
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1100px){
+    body {
+        background-size: 100vw;
+    }
+
+    h1{
+        font-size: 60px;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    section.requisitos > h1{
+        font-size: 40px;
+    }
+
+    section.requisitos > ul > li{
+        font-size: 25px;
+    }
+
+    section.animais > h1{
+        font-size: 40px;
+    }
+
+    .card img {
+        width: calc(50%);
+        height: calc(50%);
+    }
+
+}
+
+@media only screen and (max-width: 950px){
+    h1{
+        font-size: 50px;
+    }
+
+    h2{
+        font-size: 25px;
+    }
+
+    section.requisitos > h1{
+        font-size: 40px;
+    }
+
+    section.requisitos > ul > li{
+        font-size: 25px;
+    }
+
+    section.animais{
+        height: 700px;
+    }
+
+    section.animais > h1{
+        font-size: 40px;
+    }
+
+}
+
+@media only screen and (max-width: 550px){
+    section{
+        height: 600px;
+    }
+    section#img01{
+        background-position: center;
+    }
+
+    section.requisitos > ul{
+        padding: 0px 40px;
+    }
+
+    section.requisitos > ul > li{
+        font-size: 18px;
+    }
+
+    section.requisitos > ul > li#primeiro{
+        padding-top: 150px;
+    }
+
+    section.animais {
+        height: 900px;
+    }
+
+    section.animais > h1{
+        font-size: 30px;
     }
 }
   

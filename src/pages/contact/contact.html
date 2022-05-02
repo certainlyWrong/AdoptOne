@@ -15,6 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+  <!-- <script defer src="../../scripts/localstorage.js" defer></script> -->
 </head>
 
 <body>
@@ -60,7 +61,7 @@
   </section>
 
   
-  <div class="corpo">
+  <div class="corpo" id="corpo">
     <div class="title">
       <div id="linha"></div>
       <h2>DEIXE UMA MENSAGEM</h2>
@@ -86,19 +87,19 @@
         <div class="wrapper">
           <div class="box">
             <label for="telefone">Telefone</label>
-            <input type="text" name="telefone" id="telefone" required>
+            <input type="number" name="telefone" id="telefone" maxlength="10" required>
           </div>
         </div>
         <div class="wrapper">
           
           <div class="box">
             <label for="telefone">Tipo:</label>
-            <select name="type" required>
+            <select id="op" name="type" required>
               <option value="">---</option>
-              <option value="op1">Elogio</option>
-              <option value="op2">Dúvida</option>
-              <option value="op3">Crítica</option>
-              <option value="op4">Sugestão</option>
+              <option value="Elogio">Elogio</option>
+              <option value="Dúvida">Dúvida</option>
+              <option value="Crítica">Crítica</option>
+              <option value="Sugestão">Sugestão</option>
             </select>
           </div>
         </div>
@@ -108,7 +109,8 @@
             <textarea maxlength="400" id="mes" required style="border:solid 5px #bbbbb8fc;"></textarea>
           </div>
         </div>
-        <a href="../../../index.html"><input type="submit" value=" ENVIAR "></a>
+        <a href="contact.html"><input type="submit" id='enviar'value=" ENVIAR "
+          onclick="location.href='#corpo'"></a>
       </form>
     </div>
   </div>
@@ -159,5 +161,38 @@
   </footer>
 
   <script src="./../../scripts/navbar.js"></script>
+  <script>
+    const send = document.querySelector('#enviar')
+    send.addEventListener('click',function(e){
+      e.preventDefault();
+      const name  = document.querySelector('#name');
+      const email = document.querySelector('#email');
+      const phone = document.querySelector('#telefone');
+      const op = document.querySelector('#op');
+      const msg = document.querySelector('#mes');
+      if(name.value=="" || email.value=="" || phone.value=="" || op=="" || msg.value==""){
+        alert("Preencha todos os campos, por favor!")
+      }
+      else{
+        const value1 = name.value;
+        const value2 = email.value;
+        const value3 = phone.value;
+        const value4 = op.value;
+        const value5 = msg.value;
+        localStorage.setItem('user',value1);
+        localStorage.setItem('email',value2);
+        localStorage.setItem('phone',value3);
+        localStorage.setItem('op',value4);
+        localStorage.setItem('msg-text',value5);
+        alert("Olá "+localStorage.user+"! Sua mensagem foi enviada com sucesso!");
+        document.getElementById('name').value='';
+        document.getElementById('email').value='';
+        document.getElementById('telefone').value='';
+        document.getElementById('op').value='---';
+        document.getElementById('mes').value='';
+        window.location.href="contact.html";
+      } 
+    });
+  </script>
 </body>
 </html>

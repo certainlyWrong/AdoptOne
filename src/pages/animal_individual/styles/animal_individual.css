@@ -1,0 +1,121 @@
+.mon-conteiner {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-areas: "a i";
+  grid-template-columns: 01fr 3fr;
+  grid-template-rows: 4fr;
+  transition: 0.3s;
+}
+
+.conteiner-info-animaux {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #63A375;
+  grid-area: a;
+  font-family: 'Concert One';
+  text-transform: uppercase;
+}
+
+.conteiner-info-animaux>p {
+  padding: 4px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.conteiner-more-information {
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+  background-color: white;
+  grid-area: i;
+}
+
+.conteiner-info-animaux .image {
+  margin: 2rem auto 1rem auto;
+  border-radius: 500px;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.image img {
+  border-radius: 500px;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.conteiner-more-information>p {
+  margin: auto 3rem auto 3rem;
+  font-weight: 300;
+  font-family: 'Concert One';
+  line-height: 1.3rem;
+  text-align: justify;
+  color: gray;
+}
+
+.conteiner-more-information>h1 {
+  text-align: center;
+  margin: 2vw auto 2vw auto ;
+  font-size: calc(1.2rem + 5vw);
+  color: black;
+  font-weight: 300;
+  font-family: 'Concert One';
+}
+
+.conteiner-more-information .butoes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.butoes>button {
+  padding: 10px;
+  margin: 30px auto 30px auto;
+  width: 130px;
+  height: auto;
+  font-size: large;
+  font-family: dangrek;
+  color: black;
+  background: linear-gradient(0deg, #E5F6F0, #E5F6F0);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 30px;
+  text-transform: uppercase;
+}
+
+.butoes>button:hover {
+  background: linear-gradient(0deg, #63A375, #3b9c56);
+  color: white;
+}
+
+@media (max-width:900px) {
+  .mon-conteiner {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .conteiner-info-animaux {
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width:550px) {
+  .conteiner-more-information>p {
+    margin: auto 1rem auto 1rem;
+  }
+
+  .butoes>button {
+    font-size: 75%;
+    width: 35%;
+    padding: 1vw;
+  }
+}

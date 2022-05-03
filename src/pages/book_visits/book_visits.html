@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>apadrinhar</title>
+  <title>marcar visitas</title>
 
   <!-- PRINCIPAIS IMPORTS DO CSS -->
   <link rel="stylesheet" href="../../styles/global_configs.css">
@@ -64,32 +64,15 @@
         <input type="email" id="idmail">
         <label for="idtel">Telefone</label>
         <input type="tel" id="idtel">
-        <div class="checkbox">
-          <input type="checkbox" id="idcheck">
-          <label for="idcheck">Voce concorda com os termos de Apadrinhamento?</label>
-        </div>
-        <div class="boleto">
-          <div class="boleto-img">
-            <img src="../../../assets/icons/nuvem.svg">
-            <p>Baixar boleto de matricula no apadrinhamento.</p>
-          </div>
-          <ul>
-            <li>
-            Apos o pagamento da matricula, serao gerados boletos mensais para continuar ajudando o animal escolhido, ao parar de pagar durantes dois meses o cancelamento da matricula é realizado.
-            </li>
-          </ul>
-        </div>
+        <label for="iddata">Data escolhida</label>
+        <input type="date" id="iddata">
       </div>
 
       <div class="col2">
-        <label for="idcpf">CPF</label>
-        <input type="tel" id="idcpf">
-        <label for="idrg">RG</label>
-        <input type="tel" id="idrg">
-        <label for="idend">Endereco</label>
-        <input type="tel" id="idend">
+        <label for="iddata_dispo">Datas disponiveis</label>
+        <img id="iddata_dispo" src="../../../assets/icons/calendario (1) 1.svg" alt="">
         <div class="button_submit_contaner">
-          <button type="submit">CONCLUIR</button>
+          <button type="submit">MARCAR VISITA</button>
         </div>
       </div>
     </form>

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>apadrinhar</title>
+  <title>adotar</title>
 
   <!-- PRINCIPAIS IMPORTS DO CSS -->
   <link rel="stylesheet" href="../../styles/global_configs.css">
@@ -66,22 +66,31 @@
         <input type="tel" id="idtel">
         <div class="checkbox">
           <input type="checkbox" id="idcheck">
-          <label for="idcheck">Voce concorda com os termos de Apadrinhamento?</label>
+          <label for="idcheck">Voce tem tempo para cuidar de um animal?</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="idcheck">
+          <label for="idcheck">Voce vai arcar com todas as depesas necessarias?</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="idcheck">
+          <label for="idcheck">Sua casa é segura para uma animal?</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="idcheck">
+          <label for="idcheck">Você concorda com todos os Termos de Adoção</label>
         </div>
         <div class="boleto">
           <div class="boleto-img">
             <img src="../../../assets/icons/nuvem.svg">
-            <p>Baixar boleto de matricula no apadrinhamento.</p>
+            <p>Baixar termo de adocao para assinatura do responsavel</p>
           </div>
-          <ul>
-            <li>
-            Apos o pagamento da matricula, serao gerados boletos mensais para continuar ajudando o animal escolhido, ao parar de pagar durantes dois meses o cancelamento da matricula é realizado.
-            </li>
-          </ul>
         </div>
       </div>
 
       <div class="col2">
+        <label for="idinfor_animal">Porque voce quer adotar um bichinho?</label>
+        <textarea maxlength="400" id="idinfor_animal" cols="30" rows="10"></textarea>
         <label for="idcpf">CPF</label>
         <input type="tel" id="idcpf">
         <label for="idrg">RG</label>
@@ -89,7 +98,7 @@
         <label for="idend">Endereco</label>
         <input type="tel" id="idend">
         <div class="button_submit_contaner">
-          <button type="submit">CONCLUIR</button>
+          <button type="submit">MARCAR VISITA</button>
         </div>
       </div>
     </form>

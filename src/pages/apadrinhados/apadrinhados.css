@@ -1,0 +1,198 @@
+*{
+    box-sizing:0;
+    margin:0;
+    padding:0;
+}
+
+.componentes1{
+    align-items:center;
+    justify-content:center;
+    display:flex;
+    flex-direction:row;
+    padding:2vh;
+    margin:2vh;
+}
+
+.componentes1 .back img{
+    height:80px;
+    margin:10vh;
+    transform:scaleX(-1);
+    width:80px;
+}
+
+.componentes1 .go img{
+    height:80px;
+    margin:10vh;
+    width:80px;
+}
+
+.conteiner{
+    align-items:center;
+    background:#E5F6F0;
+    border-radius: 15px;
+    display:flex;
+    flex-direction:column;
+    height:498px;
+    justify-content:center;
+    width:777px;
+}
+
+.conteiner .photo{
+    width:707px;
+    height:354px;
+}
+
+.conteiner img{
+    height:100%;
+    object-fit:cover;
+    width:100%;
+}
+
+.conteiner .name{
+    background:#D57A66;
+    border-radius:0px 0px 15px 15px;
+    color:#6B3D33;
+    font-family:'Dangrek';
+    font-size:32px;
+    height:49px;
+    text-align:center;
+    text-transform:uppercase;
+    width:707px;
+}
+
+.componentes2{
+    background:#E5F6F0;
+    display:flex;
+    flex-direction:column;
+    height:676px;
+    justify-content:center;
+    margin:0;
+    padding:0;
+    width:100%;
+}
+
+.componentes2 .text-cit{
+    font-family:'Concert One';
+    font-size:50px;
+    font-weight:400;
+    line-height:64px;
+    color: #63A375; 
+}
+
+.componentes2 .cit img{
+    height:80px;
+    margin:4vh;
+    width:80px;
+}
+
+.componentes2 .autor{
+    text-align:center;
+    font-family:'Concert One';
+    font-size:64px;
+    font-weight:400;
+    line-height:64px;
+    color: #63A375;
+    text-transform:uppercase;
+}
+
+.componentes2 .first{
+    align-items:center;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    justify-content:center;
+}
+
+.componentes2 .info>h1{
+    color:#FFFFFF;
+    font-family:'Dangrek';
+    font-size:36px;
+    font-weight:400;
+    line-height:65px;
+    margin:10vh;
+    text-align:center;
+    text-shadow:2px 2px #63A375;
+}
+
+@media (max-width:1200px){
+    .componentes1{
+        align-items:center;
+        display:flex;
+        flex-direction:row;
+        padding:2vh;
+        margin:2vh;
+    }
+
+    .componentes1 .back img{
+        height:40px;
+        margin:5vh;
+        transform:scaleX(-1);
+        width:40px;
+    }
+    
+    .componentes1 .go img{
+        height:40px;
+        margin:5vh;
+        width:40px;
+    }
+
+    .conteiner .photo{
+        width:400px;
+        height:200px;
+    }
+
+    .conteiner .name{
+        width:400px;
+    }
+    .conteiner{
+        align-items:center;
+        background:#E5F6F0;
+        border-radius:15px;
+        display:flex;
+        flex-direction:column;
+        height:300px;
+        justify-content:center;
+        width:500px;
+    }
+}
+
+@media (max-width:700px){ 
+    .componentes1 .back img{
+        display: none;
+    }
+    .componentes1 .go img{
+        display: none;
+    }
+}
+
+@media (max-width:550px){ 
+    .conteiner{
+        height:150px;
+        width:200px;
+    }
+    .conteiner .photo{
+        width:150px;
+        height:100px;
+    }
+    .conteiner .name{
+        width:150px;
+        height: 18px;
+        font-size:13px;
+    }
+    .componentes2 .cit{
+        display:none;
+    }
+    .componentes2 .text-cit{
+        font-size:25px;
+        line-height:25px;
+    }
+    .componentes2 .autor{
+        margin: 2vh;
+        font-size:25px;
+        line-height:25px;
+    }
+    .componentes2 .info>h1{
+        font-size:20px;
+        line-height:20px;
+    }
+}

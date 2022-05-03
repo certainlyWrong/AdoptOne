@@ -1,0 +1,157 @@
+.container-form {
+  width: 100%;
+  height: auto;
+  margin: 3rem auto 6rem auto;
+}
+
+.apadrinhar-form {
+  margin: auto;
+  width: 80vw;
+  height: auto;
+  display: flex;
+}
+
+.apadrinhar-form label {
+  font-family: dangrek;
+  color: #808080;
+}
+
+.apadrinhar-form input {
+  background-color: #c4c4c4;
+  border: none;
+  padding: 5px;
+}
+
+.apadrinhar-form button {
+  padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  background-color: #D57A66;
+  cursor: pointer;
+  animation: alternate;
+  transform: 2s;
+}
+
+.apadrinhar-form button:hover {
+  background-color: #ce9488;
+}
+
+.button_submit_contaner {
+  width: 100%;
+  text-align: center;
+}
+
+.col1 {
+  width: 40%;
+  margin: 0 auto auto auto;
+}
+
+.col2 {
+  width: 30%;
+  margin: 0 auto auto auto;
+}
+
+.apadrinhar-form input {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.checkbox {
+  /* margin: 1rem auto auto auto; */
+  margin: auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  text-align: left;
+  justify-content: left;
+}
+
+.checkbox label {
+  padding: none;
+  margin: auto auto auto 5px !important;
+}
+
+.checkbox input {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  color: #c4c4c4;
+  margin: auto 0 auto 0;
+}
+
+.boleto {
+  display: block;
+  text-align: justify;
+  margin: 1rem auto auto auto;
+}
+
+.boleto-img {
+  margin: auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: left;
+}
+
+.boleto img {
+  width: 25px;
+  height: 25px;
+  /* margin: auto; */
+}
+
+.boleto p {
+  font-family: dangrek;
+  color: #808080;
+  margin: auto auto auto 7px;
+}
+
+.boleto li {
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: #808080;
+  margin: 1rem auto auto auto;
+}
+
+@media (max-width:900px) {
+  .apadrinhar-form {
+    width: 80vw;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col1 {
+    width: 50%;
+    margin: auto;
+  }
+
+  .col2 {
+    width: 50%;
+    margin: auto;
+    margin: 2rem auto auto auto;
+  }
+}
+
+@media (max-width:550px) {
+  .apadrinhar-form {
+    width: 90vw;
+  }
+
+  .col1 {
+    width: 80%;
+    margin: auto;
+  }
+
+  .col2 {
+    width: 80%;
+    margin: auto;
+  }
+}

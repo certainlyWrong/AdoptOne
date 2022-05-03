@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="./../../styles/navbar.css">
   <link rel="stylesheet" href="./../../styles/footer.css">
   <link rel="stylesheet" href="./contact.css">
-  <link rel="icon" href="../../../assets/logo.svg"/>
+  <link rel="icon" href="../../../assets/logo.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
@@ -23,23 +23,23 @@
   <header class="sticky">
     <nav>
       <div class="logo">
-        <a href="./../../../index.html">
-          <img id="logo-img" src="./../../../assets/logo.svg">
-        </a>
+        <a href="./../../../index.html"><img id="logo-img" src="./../../../assets/logo.svg" alt="home"></a>
       </div>
       <div id="menu">
         <ul>
-          <li>ANIMAIS</li>
-          <li><a href="./../artigos/artigos.html">ARTIGOS</a></li>
+          <li><a href="./../../../src/pages/adoption_animals/adoption_animals.html">ANIMAIS</a></li>
+          <li><a href="./../../../src/pages/artigos/artigos.html">ARTIGOS</a></li>
           <li>LOJA</li>
-          <li><a href="./../about/about.html">SOBRE O PROJETO</a></li>
-          <li><a href="./../contact/contact.html">CONTATO</a></li>
+          <li><a href="./../../../src/pages/about/about.html">SOBRE O PROJETO</a></li>
+          <li><a href="./../../../src/pages/contact/contact.html">CONTATO</a></li>
         </ul>
       </div>
       <div class="login-static login-dynamic">
-        <a href="./../cadastro/cadastro.html"><button class="button-login">ENTRAR</button></a>
+        <a class="button-login" href="./../../../src/pages/cadastro/cadastro.html">
+          ENTRAR
+        </a>
         <div class="icon-user">
-          <img src="./../../../assets/icons/cat-icon.svg">
+          <img src="./../../../assets/icons/cat-icon.svg" alt="user">
         </div>
       </div>
       <div id="button-menu-mobile" class="mobile-menu">
@@ -60,7 +60,7 @@
     <button id="b03">ENVIE UM EMAIL</button>
   </section>
 
-  
+
   <div class="corpo" id="corpo">
     <div class="title">
       <div id="linha"></div>
@@ -68,20 +68,20 @@
       <div id="linha"></div>
     </div>
     <div class="conteiner">
-      
+
       <form>
         <div class="wrapper">
           <div class="box">
             <label for="name">Nome</label>
             <input type="text" name="name" id="name" required>
-            
+
           </div>
         </div>
         <div class="wrapper">
           <div class="box">
             <label for="email">E-mail</label>
             <input type="email" name="email" id="email" required>
-            
+
           </div>
         </div>
         <div class="wrapper">
@@ -91,7 +91,7 @@
           </div>
         </div>
         <div class="wrapper">
-          
+
           <div class="box">
             <label for="telefone">Tipo:</label>
             <select id="op" name="type" required>
@@ -109,8 +109,7 @@
             <textarea maxlength="400" id="mes" required style="border:solid 5px #bbbbb8fc;"></textarea>
           </div>
         </div>
-        <a href="contact.html"><input type="submit" id='enviar'value=" ENVIAR "
-          onclick="location.href='#corpo'"></a>
+        <a href="contact.html"><input type="submit" id='enviar' value=" ENVIAR " onclick="location.href='#corpo'"></a>
       </form>
     </div>
   </div>
@@ -163,36 +162,37 @@
   <script src="./../../scripts/navbar.js"></script>
   <script>
     const send = document.querySelector('#enviar')
-    send.addEventListener('click',function(e){
+    send.addEventListener('click', function (e) {
       e.preventDefault();
-      const name  = document.querySelector('#name');
+      const name = document.querySelector('#name');
       const email = document.querySelector('#email');
       const phone = document.querySelector('#telefone');
       const op = document.querySelector('#op');
       const msg = document.querySelector('#mes');
-      if(name.value=="" || email.value=="" || phone.value=="" || op=="" || msg.value==""){
+      if (name.value == "" || email.value == "" || phone.value == "" || op == "" || msg.value == "") {
         alert("Preencha todos os campos, por favor!")
       }
-      else{
+      else {
         const value1 = name.value;
         const value2 = email.value;
         const value3 = phone.value;
         const value4 = op.value;
         const value5 = msg.value;
-        localStorage.setItem('user',value1);
-        localStorage.setItem('email',value2);
-        localStorage.setItem('phone',value3);
-        localStorage.setItem('op',value4);
-        localStorage.setItem('msg-text',value5);
-        alert("Olá "+localStorage.user+"! Sua mensagem foi enviada com sucesso!");
-        document.getElementById('name').value='';
-        document.getElementById('email').value='';
-        document.getElementById('telefone').value='';
-        document.getElementById('op').value='---';
-        document.getElementById('mes').value='';
-        window.location.href="contact.html";
-      } 
+        localStorage.setItem('user', value1);
+        localStorage.setItem('email', value2);
+        localStorage.setItem('phone', value3);
+        localStorage.setItem('op', value4);
+        localStorage.setItem('msg-text', value5);
+        alert("Olá " + localStorage.user + "! Sua mensagem foi enviada com sucesso!");
+        document.getElementById('name').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('telefone').value = '';
+        document.getElementById('op').value = '---';
+        document.getElementById('mes').value = '';
+        window.location.href = "contact.html";
+      }
     });
   </script>
 </body>
+
 </html>

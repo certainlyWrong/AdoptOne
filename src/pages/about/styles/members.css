@@ -15,7 +15,6 @@
   width: 30vw;
   height: auto;
   margin: auto auto 1rem auto;
-  padding: auto;
   animation: alternate;
   transition: 0.5s;
 }

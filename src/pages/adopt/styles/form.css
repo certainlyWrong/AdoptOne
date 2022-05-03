@@ -33,7 +33,7 @@
   background-color: #D57A66;
   cursor: pointer;
   animation: alternate;
-  transform: 2s;
+  transition: 2s;
 }
 
 .apadrinhar-form button:hover {
@@ -71,7 +71,6 @@
 }
 
 .checkbox label {
-  padding: none;
   font-family: sans-serif;
   margin: auto auto auto 5px !important;
 }

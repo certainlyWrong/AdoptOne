@@ -43,9 +43,12 @@
         <a class="button-login" href="./src/pages/cadastro/cadastro.html">
           ENTRAR
         </a>
-        <div class="icon-user">
-          <img src="./assets/icons/cat-icon.svg" alt="user">
-        </div>
+        <a href="./src/pages/user_page/user_page.html">
+
+          <div class="icon-user">
+            <img src="./assets/icons/cat-icon.svg" alt="user">
+          </div>
+        </a>
       </div>
       <div id="button-menu-mobile" class="mobile-menu">
         <div class="line1"></div>
@@ -72,8 +75,8 @@
   <!-- ? GRID -->
   <div class="grid-container">
     <main class="cards">
-      <section class="column">
-        <h1>Adoção</h1>
+      <div class="column">
+        <span class="col_title">Adoção</span>
         <span>
           A adoção é um ato de amor, cuidado e carinho. Visite nossa 
           aba de adoção e tenha a chance de conhecer seu novo amigo.
@@ -81,9 +84,9 @@
         </span>
         <br>
         <button onclick="window.location.href='./src/pages/adoption_animals/adoption_animals.html'">Adoção</button>
-      </section>
-      <section class="column">
-        <h1>Animais Desaparecidos</h1>
+      </div>
+      <div class="column">
+        <span class="col_title">Animais Desaparecidos</span>
         <span>
           É possível buscar por seu animal perdido
           através do cadastramento do mesmo no nosso sistema de anúncios.
@@ -91,9 +94,9 @@
         <br>
         <button onclick="window.location.href='./src/pages/missing_animals/missing_animals.html'">
           Animais Desaparecidos</button>
-      </section>
-      <section class="column">
-        <h1>Animais Abondonados</h1>
+      </div>
+      <div class="column">
+        <span class="col_title">Animais Abondonados</span>
         <span>
           Você pode se tornar padrinho ou madrinha e 
           contribuir com o AdoptOne! Apadrinhe um animal
@@ -102,16 +105,16 @@
         <br>
         <button onclick="window.location.href='./src/pages/adoption_animals/adoption_animals.html'">
         Animais Abondonados</button>
-      </section>
-      <section class="column">
-        <h1>Loja</h1>
+      </div>
+      <div class="column">
+        <span class="col_title">Loja</span>
         <span>
           Na nossa loja somos completamente apaixonados por animais!
           Temos rações, brinquedos, medicamentos e muito mais!
         </span>
         <br>
         <button>Ir para a Loja</button>
-      </section>
+      </div>
     </main>
   </div>
 
@@ -122,15 +125,15 @@
 
   <!-- ? ARTIGOS -->
   <div class="artigos-content">
-    <section>
-      <h1>ARTIGOS</h1>
+    <div>
+      <span class="atigos_title">ARTIGOS</span>
       <span class="button-span">O que cachorros podem tomar?</span>
       <span class="button-span">Como cuidar de animais abondonados?</span>
       <span class="button-span">Sugestões de nomes para gatos.</span>
       <button class="view-article" onclick="window.location.href='./src/pages/artigos/artigos.html'">
        VER MAIS ARTIGOS
       </button>
-    </section>
+    </div>
     <div class="img-container">
       <img src="./assets/images/Dog-1.png" alt="">
     </div>

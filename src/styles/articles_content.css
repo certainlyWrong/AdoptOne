@@ -10,7 +10,7 @@
   transition: 0.4s;
 }
 
-.artigos-content H1 {
+.artigos-content .atigos_title {
   font-family: 'Dangrek';
   font-style: normal;
   font-weight: 400;
@@ -22,7 +22,7 @@
   background-clip: text;
 }
 
-.artigos-content section {
+.artigos-content .img-container {
   margin: auto;
   padding: 1vw;
   display: block;
@@ -85,7 +85,7 @@ a{
     display: block;
   }
 
-  section span {
+  .img-container span {
     margin: auto;
   }
 
@@ -93,11 +93,11 @@ a{
     margin: auto;
   }
 
-  .artigos-content H1 {
+  .artigos-content .atigos_title {
     margin: auto;
   }
 
-  section {
+  .img-container {
     align-items: center;
     text-align: center;
     justify-content: center;

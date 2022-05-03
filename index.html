@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="./src/styles/articles_content.css">
   <link rel="stylesheet" href="./src/styles/footer.css">
   <link rel="icon" href="./assets/logo.svg" />
-  <title>Home</title>
+  <title>AdoptOne</title>
 </head>
 
 <body>
@@ -28,7 +28,7 @@
   <header class="sticky">
     <nav>
       <div class="logo">
-        <a href="./index.html"><img id="logo-img" src="./assets/logo.svg"></a>
+        <a href="./index.html"><img id="logo-img" src="./assets/logo.svg" alt=""></a>
       </div>
       <div id="menu">
         <ul>
@@ -40,9 +40,10 @@
         </ul>
       </div>
       <div class="login-static login-dynamic">
-        <a href="./src/pages/login/login.html"><button class="button-login">ENTRAR</button></a>
+        <button class="button-login" onclick="window.location.href='./src/pages/login/login.html'">
+          ENTRAR</button>
         <div class="icon-user">
-          <a class="user_next" href="./src/pages/user_page/user_page.html"><img src="./assets/icons/cat-icon.svg"></a>
+          <a class="user_next" href="./src/pages/user_page/user_page.html"><img src="./assets/icons/cat-icon.svg" alt=""></a>
         </div>
       </div>
       <div id="button-menu-mobile" class="mobile-menu">
@@ -55,7 +56,7 @@
 
   <!-- ? SLIDE -->
   <div class="slide">
-    <img class="slide-content" src="./assets/images/cat.png">
+    <img class="slide-content" src="./assets/images/cat.png" alt="">
     <div class="overlay">
       <h1>ADOTE</h1>
     </div>
@@ -63,7 +64,7 @@
 
   <!-- ? LOGO -->
   <div class="logo-large">
-    <img src="./assets/logoV2.svg">
+    <img src="./assets/logoV2.svg" alt=""> 
   </div>
 
   <!-- ? GRID -->
@@ -72,43 +73,39 @@
       <section class="column">
         <h1>Adoção</h1>
         <span>
-          Eske wap kanpe deye tout saw di yo
-          Eske wap kanpe de ye tout saw di yo
-          Eske wap kanpe deye tout saw di yo
-          Eske wap kanpe de ye tout saw di yo.
+          A adoção é um ato de amor, cuidado e carinho. Visite nossa 
+          aba de adoção e tenha a chance de conhecer seu novo amigo.
+          Cadastramos de forma profissional todos os animais resgatados.
         </span>
         <br>
-        <button>Lear More</button>
+        <button onclick="window.location.href='./src/pages/adoption_animals/adoption_animals.html'">Adoção</button>
       </section>
       <section class="column">
         <h1>Animais Desaparecidos</h1>
         <span>
-          Eske wap kanpe deye tout saw di yo
-          Eske wap kanpe de ye tout saw di yo
-          Eske wap kanpe deye tout saw di yo
-          Eske wap kanpe de ye tout saw di yo.
+          É possível buscar por seu animal perdido
+          através do cadastramento do mesmo no nosso sistema de anúncios.
         </span>
         <br>
-        <button>Lear More</button>
+        <button onclick="window.location.href='./src/pages/missing_animals/missing_animals.html'">
+          Animais Desaparecidos</button>
       </section>
       <section class="column">
         <h1>Animais Abondonados</h1>
         <span>
-          Eske wap kanpe deye tout saw di yo
-          Eske wap kanpe de ye tout saw di yo
-          Eske wap kanpe deye tout saw di yo
-          Eske wap kanpe de ye tout saw di yo.
+          Você pode se tornar padrinho ou madrinha e 
+          contribuir com o AdoptOne! Apadrinhe um animal
+          abandonado e garanta os cuidados diários que ele precisa!
         </span>
         <br>
-        <button>Lear More</button>
+        <button onclick="window.location.href='./src/pages/adoption_animals/adoption_animals.html'">
+        Animais Abondonados</button>
       </section>
       <section class="column">
         <h1>Loja</h1>
         <span>
-          Eske wap kanpe deye tout saw di yo
-          Eske wap kanpe de ye tout saw di yo
-          Eske wap kanpe deye tout saw di yo
-          Eske wap kanpe de ye tout saw di yo.
+          Na nossa loja somos completamente apaixonados por animais!
+          Temos rações, brinquedos, medicamentos e muito mais!
         </span>
         <br>
         <button>Ir para a Loja</button>
@@ -128,12 +125,12 @@
       <span class="button-span">O que cachorros podem tomar?</span>
       <span class="button-span">Como cuidar de animais abondonados?</span>
       <span class="button-span">Sugestões de nomes para gatos.</span>
-      <button class="view-article">
-        <a href="./src/pages/artigos/artigos.html" style="text-decoration:under-line">VER MAIS ARTIGOS</a>
+      <button class="view-article" onclick="window.location.href='./src/pages/artigos/artigos.html'">
+       VER MAIS ARTIGOS
       </button>
     </section>
     <div class="img-container">
-      <img src="./assets/images/Dog 1.png">
+      <img src="./assets/images/Dog-1.png" alt="">
     </div>
   </div>
 
@@ -147,44 +144,41 @@
         <div class="coluna01">
           <h4>AdoptOne</h4>
           <ul>
-            <li><a href="#">Contato</a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Login</a></li>
+            <li><a href="./src/pages/contact/contact.html">Contato</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./src/pages/login/login.html">Login</a></li>
             <li><a href="./src/pages/about/about.html">Sobre o Projeto</a></li>
           </ul>
         </div>
         <div class="coluna01">
           <h4>Projeto</h4>
           <ul>
-            <li><a href="#">Quem Somos</a></li>
-            <li><a href="#">Suporte</a></li>
-            <li><a href="#">Política de Privacidade</a></li>
-            <li><a href="#">Termos de Uso</a></li>
+            <li><a href="./src/pages/about/about.html">Quem Somos</a></li>
+            <li><a href="./src/pages/about/about.html">Suporte</a></li>
+            <li><a href="./src/pages/about/about.html">Política de Privacidade</a></li>
+            <li><a href="./src/pages/about/about.html">Termos de Uso</a></li>
           </ul>
         </div>
         <div class="coluna01">
           <h4>Animais</h4>
           <ul>
-            <li><a href="#">Adoção</a></li>
-            <li><a href="#">Animais Desaperecidos</a></li>
-            <li><a href="#">Apadrinhamento</a></li>
+            <li><a href="./src/pages/adoption_animals/adoption_animals.html">Adoção</a></li>
+            <li><a href="./src/pages/missing_animals/missing_animals.html">Animais Desaparecidos</a></li>
+            <li><a href="./src/pages/adoption_animals/adoption_animals.html">Apadrinhamento</a></li>
             <li><a href="./src/pages/artigos/artigos.html">Artigos</a></li>
           </ul>
         </div>
         <div class="coluna01">
           <h4>Redes Sociais</h4>
-          <ul>
-            <div class="social">
-              <li><a href="#"> <img src="./assets/icons/Facebook.svg" alt=""></a></li>
-              <li><a href="#"> <img src="./assets/icons/Instagram.svg" alt=""></a></li>
-              <li><a href="#"> <img src="./assets/icons/Twitter.svg" alt=""></a></li>
-            </div>
-          </ul>
+          <ul class="social">
+            <li><a target="_blank" href="https://www.facebook.com"> <img src="../../../assets/icons/Facebook.svg" alt=""></a></li>
+            <li><a target="_blank" href="https://www.instagram.com"> <img src="../../../assets/icons/Instagram.svg" alt=""></a></li>
+            <li><a target="_blank" href="https://www.twitter.com"> <img src="../../../assets/icons/Twitter.svg" alt=""></a></li>
+            </ul>
         </div>
       </div>
     </div>
   </footer>
-
   <!-- ? SCRIPTS -->
   <!-- O SCRIPTS DEVEM SER IMPORTANDOS NO FINAL DO BODY,
        PARA QUE OS SCRIPTS TENHAM ACESSO A TODAS AS TAGS -->
@@ -193,5 +187,4 @@
   <!-- <script src="./src/scripts/cookies.js"></script> -->
   <!-- <script src="./src/scripts/button_return.js"></script> -->
 </body>
-
 </html>

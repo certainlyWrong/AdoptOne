@@ -88,6 +88,10 @@ section.requisitos>ul>li#primeiro {
 }
 
 section.animais {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #63A375;
 }
 

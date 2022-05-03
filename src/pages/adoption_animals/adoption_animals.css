@@ -255,5 +255,13 @@ section.animais > h1{
         font-size: 30px;
     }
 }
-  
 
+@media only screen and (max-width: 420px){
+    section{
+        height: 1000px;
+    }
+
+    section.requisitos > h1{
+        font-size: 30px;
+    }
+}

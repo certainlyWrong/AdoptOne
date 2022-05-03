@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>marcar visitas</title>
+
+  <!-- PRINCIPAIS IMPORTS DO CSS -->
+  <link rel="stylesheet" href="../../styles/global_configs.css">
+  <link rel="stylesheet" href="../../styles/reset.css">
+
+  <!-- IMPORTS -->
+  <link rel="stylesheet" href="../../styles/navbar.css">
+  <link rel="stylesheet" href="../../styles/footer.css">
+  <link rel="stylesheet" href="./styles/tittle.css">
+  <link rel="stylesheet" href="./styles/form.css">
+
+</head>
+
+<body>
+  <!-- ? NAVBAR -->
+  <header class="sticky">
+    <nav>
+      <div class="logo">
+        <a href="./index.html"><img id="logo-img" src="../../../assets/logo.svg"></a>
+      </div>
+      <div id="menu">
+        <ul>
+          <li><a href="../missing_animals/missing_animals.html">ANIMAIS</a></li>
+          <li><a href="../artigos/artigos.html">ARTIGOS</a></li>
+          <li>LOJA</li>
+          <li><a href="../about/about.html">SOBRE O PROJETO</a></li>
+          <li><a href="../contact/contact.html">CONTATO</a></li>
+        </ul>
+      </div>
+      <div class="login-static login-dynamic">
+        <a href="../cadastro/cadastro.html"><button class="button-login">ENTRAR</button></a>
+        <div class="icon-user">
+          <a class="user_next" href="../user_page/user_page.html"><img src="../../../assets/icons/cat-icon.svg"></a>
+        </div>
+      </div>
+      <div id="button-menu-mobile" class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container-tittle">
+    <div class="line"></div>
+    <h1 class="tittle">preencha os campos a seguir</h1>
+    <div class="line"></div>
+  </div>
+
+  <div class="container-form">
+    <form class="apadrinhar-form">
+      <div class="col1">
+        <label for="idname">Nome</label>
+        <input type="text" id="idname">
+        <label for="idmail">E-mail</label>
+        <input type="email" id="idmail">
+        <label for="idtel">Telefone</label>
+        <input type="tel" id="idtel">
+        <label for="iddata">Data escolhida</label>
+        <input type="date" id="iddata">
+      </div>
+
+      <div class="col2">
+        <label for="iddata_dispo">Datas disponiveis</label>
+        <img id="iddata_dispo" src="../../../assets/icons/calendario (1) 1.svg" alt="">
+        <div class="button_submit_contaner">
+          <button type="submit">MARCAR VISITA</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!-- ? FOOTER DA PAG -->
+  <footer class="footer">
+    <div class="componentes">
+      <div class="linha">
+        <div class="coluna01">
+          <h4>AdoptOne</h4>
+          <ul>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="../about/about.html">Sobre o Projeto</a></li>
+          </ul>
+        </div>
+        <div class="coluna01">
+          <h4>Projeto</h4>
+          <ul>
+            <li><a href="#">Quem Somos</a></li>
+            <li><a href="#">Suporte</a></li>
+            <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="#">Termos de Uso</a></li>
+          </ul>
+        </div>
+        <div class="coluna01">
+          <h4>Animais</h4>
+          <ul>
+            <li><a href="#">Adoção</a></li>
+            <li><a href="#">Animais Desaperecidos</a></li>
+            <li><a href="#">Apadrinhamento</a></li>
+            <li><a href="../artigos/artigos.html">Artigos</a></li>
+          </ul>
+        </div>
+        <div class="coluna01">
+          <h4>Redes Sociais</h4>
+          <ul>
+            <div class="social">
+              <li><a href="#"> <img src="../../../assets/icons/Facebook.svg" alt=""></a></li>
+              <li><a href="#"> <img src="../../../assets/icons/Instagram.svg" alt=""></a></li>
+              <li><a href="#"> <img src="../../../assets/icons/Twitter.svg" alt=""></a></li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../scripts/navbar.js"></script>
+</body>
+
+</html>

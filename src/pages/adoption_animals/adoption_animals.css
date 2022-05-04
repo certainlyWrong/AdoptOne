@@ -168,6 +168,10 @@ section.animais>h1 {
   margin: auto;
 }
 
+span a:visited {
+  color: white;
+}
+
 @media (max-width: 1280px) {
   #animais-cards {
     grid-template-columns: repeat(auto-fill, 200px);

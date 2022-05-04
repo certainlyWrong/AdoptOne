@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contato</title>
+
+  <link rel="shortcut icon" href="../../../assets/logo.svg" type="image/x-icon">
+
   <link rel="stylesheet" href="./../../styles/reset.css">
   <link rel="stylesheet" href="./../../../src/styles/global_configs.css">
   <link rel="stylesheet" href="./../../styles/navbar.css">
@@ -50,22 +53,22 @@
     </nav>
   </header>
 
-  <section class="imagem" id="img01">
+  <div class="imagem" id="img01">
     <h1>FALE CONOSCO</h1>
-  </section>
+  </div>
 
-  <section class="botoes">
-    <a href="../about/about.html"><button id="b01">ENCONTRE SUA DÚVIDA</button></a>
+  <div class="botoes">
+    <button id="b01">ENCONTRE SUA DÚVIDA</button>
     <button id="b02">CHAT ONLINE</button>
     <button id="b03">ENVIE UM EMAIL</button>
-  </section>
+  </div>
 
 
   <div class="corpo" id="corpo">
     <div class="title">
-      <div id="linha"></div>
+      <div class="contact_linha"></div>
       <h2>DEIXE UMA MENSAGEM</h2>
-      <div id="linha"></div>
+      <div class="contact_linha"></div>
     </div>
     <div class="conteiner">
 
@@ -87,7 +90,7 @@
         <div class="wrapper">
           <div class="box">
             <label for="telefone">Telefone</label>
-            <input type="number" name="telefone" id="telefone" maxlength="10" required>
+            <input type="tel" name="telefone" id="telefone" maxlength="10" required>
           </div>
         </div>
         <div class="wrapper">
@@ -109,7 +112,7 @@
             <textarea maxlength="400" id="mes" required style="border:solid 5px #bbbbb8fc;"></textarea>
           </div>
         </div>
-        <a href="contact.html"><input type="submit" id='enviar' value=" ENVIAR " onclick="location.href='#corpo'"></a>
+        <input type="submit" id='enviar' value=" ENVIAR " onclick="location.href='#corpo'">
       </form>
     </div>
   </div>

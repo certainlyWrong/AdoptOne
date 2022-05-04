@@ -5,7 +5,7 @@
   display: flex;
 }
 
-.posts section {
+.posts .cartaz {
   width: 25%;
   height: auto;
   margin: 5rem auto 5rem auto;
@@ -13,7 +13,7 @@
   transition: 2s;
 }
 
-.posts section img {
+.posts .cartaz img {
   width: 100%;
   height: 100%;
   margin: auto;
@@ -29,7 +29,7 @@
     display: block;
   }
 
-  .posts section {
+  .posts .cartaz {
     margin: 3rem auto 3rem auto;
     width: 60vw;
   }

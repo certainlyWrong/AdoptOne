@@ -1,214 +1,222 @@
 * {
-    margin:0px;
-    padding:0px;
-    box-sizing:border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-.corpo{
-    align-items:center;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
+.corpo {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.conteiner{
-    align-items:center;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
+.conteiner {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-form{
-    align-items:center;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
+form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.corpo .title{
-    align-items:center;
-    display:flex;
-    flex-direction:row;
-    justify-content:center; 
-    margin:2vh;
-    padding:2vh;
-    text-align:center;
+.corpo .title {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 2vh;
+  padding: 2vh;
+  text-align: center;
 }
 
-h2{
-    align-self: center;
-    color:gray;
-    font-family:'Concert One';
-    font-size:2.0rem;
-    margin:0;
-    padding:0;
-    text-align:center;  
+h2 {
+  align-self: center;
+  color: gray;
+  font-family: 'Concert One';
+  font-size: 2.0rem;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
-#linha{
-    border:2px solid rgba(0,0,0,0.5);
-    width:18.7vh;
-    margin:1vh;
+.contact_linha {
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  width: 18.7vh;
+  margin: 1vh;
 }
 
-.wrapper{
-    padding:2vh;
-    width:100%;
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minimax(250px,1fr));
-    grid-gap:30px;
-    gap:30px;
+.wrapper {
+  padding: 2vh;
+  width: 100%;
+  display: grid;
 }
 
-.wrapper .box input{
-    width: 100%;
-    position: relative;
-    padding: 20px;
-    background-color: #bbbbb8fc;
-    font-family: Arial;
-    height: 50px;
-    padding: 0 0.5rem;
-    margin-top: 1rem;
-    outline: none;
-    color: black;
-    font-size: 1rem;
-    border: none;
-    border-radius: 8px
+.wrapper .box input {
+  width: 100%;
+  position: relative;
+  padding: 20px;
+  background-color: #bbbbb8fc;
+  font-family: Arial;
+  height: 50px;
+  padding: 0 0.5rem;
+  margin-top: 1rem;
+  outline: none;
+  color: black;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px
 }
 
-.wrapper .box label{
-    font-family: 'Dangrek';
-    font-size: 1.1rem;
-    margin-top: 2rem;
-    opacity: 0.5;
+.wrapper .box label {
+  font-family: 'Dangrek';
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  opacity: 0.5;
 }
 
-.wrapper .box textarea{
-    width: 100%;
-    position: relative;
-    padding: 20px;
-    background-color: #bbbbb8fc;
-    font-family: Arial;
-    height: 200px;
-    padding: 0 0.5rem;
-    margin-top: 1rem;
-    outline: none;
-    color: black;
-    font-size: 1rem;
-    border: none;
-    border-radius: 8px;
-    resize: none;
+.wrapper .box textarea {
+  width: 100%;
+  position: relative;
+  padding: 20px;
+  background-color: #bbbbb8fc;
+  font-family: Arial;
+  height: 200px;
+  padding: 0 0.5rem;
+  margin-top: 1rem;
+  outline: none;
+  color: black;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  resize: none;
 }
 
 .conteiner input[type="submit"] {
-    color: white;
-    font-size: 4vh;
-    font-family: 'Dangrek', 'Courier New', Courier, monospace;
-    background-color:#52947C;
-    cursor: pointer;
-    margin-top: 2rem;
-    border: none;
-    border-radius: 20px;
-    transition: all .4s ease-in-out;
-    opacity: 100%;
-    box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.377);
-    margin-bottom: 5vh;
-    
+  color: white;
+  font-size: 4vh;
+  font-family: 'Dangrek', 'Courier New', Courier, monospace;
+  background-color: #52947C;
+  cursor: pointer;
+  margin-top: 2rem;
+  border: none;
+  border-radius: 20px;
+  transition: all .4s ease-in-out;
+  opacity: 100%;
+  box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.377);
+  margin-bottom: 5vh;
+
 }
 
 
 
-h1{
-    font-family: 'Dangrek', 'Courier New', Courier, monospace;
-    font-size:90px;
-    font-weight:400;
-    padding-top:14rem;
-    text-align:center;
-    text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+h1 {
+  font-family: 'Dangrek', 'Courier New', Courier, monospace;
+  font-size: 90px;
+  font-weight: 400;
+  padding-top: 14rem;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-section.imagem{
-    height: 450px;
-    background-color: white;
-    color: white;
-    background-size: cover;
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.377);
+div.imagem {
+  height: 450px;
+  background-color: white;
+  color: white;
+  background-size: cover;
+  box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.377);
 }
 
-section#img01 {
-    background-image: url("./../../../assets/images/cute-little-dog-impersonating-business-person.jpg");
-    background-position: center;
+div#img01 {
+  background-image: url("./../../../assets/images/cute-little-dog-impersonating-business-person.jpg");
+  background-position: center;
 }
 
-section.botoes{
-    align-items:center;
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
-    padding:2rem 2rem;
+div.botoes {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2rem 2rem;
 }
 
-section.botoes #b01, section.botoes #b02, section.botoes #b03{
-    background-color:white;
-    border-radius:15px;
-    border:none;
-    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family:'Concert One', 'Courier New', Courier, monospace;
-    font-size: 1rem;
-    height:70px;
-    margin-left:2rem;
-    width:400px;
+div.botoes #b01,
+div.botoes #b02,
+div.botoes #b03 {
+  background-color: white;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: 'Concert One', 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  height: 70px;
+  margin-left: 2rem;
+  width: 400px;
 }
 
-option{
-    font-family:'Nunito';
-    font-size:1rem;
-    background-color:#CA6680;
+option {
+  font-family: 'Nunito';
+  font-size: 1rem;
+  background-color: #CA6680;
 }
 
 select {
-    font-family:'Nunito';
-    font-size:0.9rem;
-    padding:2px 5px;
+  font-family: 'Nunito';
+  font-size: 0.9rem;
+  padding: 2px 5px;
 }
 
-@media (max-width:700px){
-    h1{
-        font-size:5rem;
-    }
-    h2{
-        font:1.5rem/2rem 'Concert One';
-    }
-    #linha{
-        display:none;
-    }
-    section.botoes{
-        align-items:center;
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        padding:2rem 2rem;
-    }
-    section.botoes #b03{
-        height:70px;
-        width:200px;
-        margin-bottom:0;
-        margin-left:0rem;
-    }
-    section.botoes #b01, section.botoes #b02{
-        height:70px;
-        width:200px;
-        margin-bottom:2rem;
-        margin-left:0rem;
-    }
-    
-}
-section.botoes #b01:hover{
-    cursor:pointer;
-    background:#52947C;
+@media (max-width:700px) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font: 1.5rem/2rem 'Concert One';
+  }
+
+  .contact_linha {
+    display: none;
+  }
+
+  div.botoes {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 2rem;
+  }
+
+  div.botoes #b03 {
+    height: 70px;
+    width: 200px;
+    margin-bottom: 0;
+    margin-left: 0rem;
+  }
+
+  div.botoes #b01,
+  div.botoes #b02 {
+    height: 70px;
+    width: 200px;
+    margin-bottom: 2rem;
+    margin-left: 0rem;
+  }
 
 }
-section.botoes #b02:hover, section.botoes #b03:hover{
-    background:grey;
-    cursor:not-allowed;
+
+div.botoes #b01:hover {
+  cursor: pointer;
+  background: #52947C;
+
+}
+
+div.botoes #b02:hover,
+div.botoes #b03:hover {
+  background: grey;
+  cursor: not-allowed;
 }

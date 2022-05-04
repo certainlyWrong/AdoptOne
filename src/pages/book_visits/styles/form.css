@@ -33,7 +33,7 @@
   background-color: #D57A66;
   cursor: pointer;
   animation: alternate;
-  transform: 2s;
+  transition: 2s;
 }
 
 .apadrinhar-form button:hover {

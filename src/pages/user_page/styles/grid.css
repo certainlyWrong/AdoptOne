@@ -44,6 +44,10 @@
   object-fit: contain;
 }
 
+span a:visited {
+  color: white;
+}
+
 .card span {
   color: wheat;
   font-weight: bold;

@@ -1,158 +1,156 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Dangrek', 'Courier New', Courier, monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Dangrek', 'Courier New', Courier, monospace;
 }
 
-:root{
-    --default-color: #D57A66;
+:root {
+  --default-color: #D57A66;
 }
 
-::selection{
-    background-color: var(--default-color);
-    color: white;
+::selection {
+  background-color: var(--default-color);
+  color: white;
 }
 
 body {
-    min-width: 100vh;
-    display: flex;
-    justify-content: right;
-    background-color: white;
-    padding: 40px 100px 0px 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  /* padding: 40px 100px 0px 0px; */
+  background: lightgray;
+  background-image: url(../../../assets/images/adorable-brown-white-basenji-dog-smiling-giving-high-five-isolated-white.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+}
 
-    background: lightgray;
-    background-image: url(../../../assets/images/adorable-brown-white-basenji-dog-smiling-giving-high-five-isolated-white.jpg);
-    background-repeat: no-repeat;
+.container {
+  max-width: 850px;
+  background: #FFFFFF;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 0;
+  border-radius: 36px;
+  margin: 5rem auto auto auto;
+}
+
+.container .login-form .rectangle {
+  max-width: 850px;
+  height: 30px;
+  top: calc(50% - 60px/2 - 407px);
+  background: #D57A66;
+  border-radius: 36px 36px 0px 0px;
+}
+
+.container .form {
+  padding: 40px 30px;
+}
+
+.container .login-form .title {
+  position: relative;
+  font-size: 20px;
+  color: #D57A66;
+}
+
+.container .login-form .title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 25px;
+  background-color: var(--default-color);
+}
+
+.container .login-form .input-box {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  margin: 10px 0;
+  position: relative;
+}
+
+.container .login-form .input-box>img {
+  width: 15px;
+  position: absolute;
+}
+
+.container .login-form .input-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 0 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.container .login-form .input-box input:focus {
+  border-color: var(--default-color);
+}
+
+.container .login-form .input-box input[type="submit"] {
+  font-family: 'Dangrek';
+  color: #63A375;
+  border: 0;
+  cursor: pointer;
+  background: #E5F6F0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  height: 35px;
+}
+
+.container .login-form .input-box input[type="submit"]:hover {
+  background-color: #63A375;
+  color: #E5F6F0;
+  transition: all 0.3s;
+}
+
+.container .login-form .forgot a {
+  color: var(--default-color);
+  text-decoration: none;
+}
+
+.container .login-form .divider {
+  text-align: center;
+  margin: 10px;
+  font-size: 18px;
+
+}
+
+.container .login-form .redes-sociais {
+  text-align: center;
+}
+
+.container .login-form .redes-sociais>img {
+  margin: 10px;
+  cursor: pointer;
+  width: 30px;
+}
+
+.container .login-form .sigup-text a {
+  color: var(--default-color);
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1100px) {
+  body {
     background-size: 100vw;
+  }
 }
 
-.container{
-    max-width: 850px;
-    background: #FFFFFF;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding-top: 0;
-    border-radius: 36px;
+@media only screen and (max-width: 1020px) {
+  body {
+    background-image: none;
+    background-color: lightgrey;
+    justify-content: center;
+  }
 }
-
-.container .login-form .rectangle{
-    max-width: 850px;
-    height: 30px;
-    top: calc(50% - 60px/2 - 407px);
-    background: #D57A66;
-    border-radius: 36px 36px 0px 0px;
-}
-
-.container .form{
-    padding: 40px 30px;
-}
-
-.container .login-form .title{
-    position: relative;
-    font-size: 20px;
-    color: #D57A66;
-}
-
-.container .login-form .title::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 3px;
-    width: 25px;
-    background-color: var(--default-color);
-}
-
-.container .login-form .input-box{
-    display: flex;
-    align-items: center;
-    height: 50px;
-    width: 100%;
-    margin: 10px 0;
-    position: relative;
-}
-
-.container .login-form .input-box > img{
-    width: 15px;
-    position: absolute;
-}
-
-.container .login-form .input-box input{
-    height: 100%;
-    width: 100%;
-    outline: none;
-    border: none;
-    padding: 0 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    border-bottom:  2px solid rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-}
-
-.container .login-form .input-box input:focus{
-    border-color: var(--default-color);
-}
-
-.container .login-form .input-box input[type="submit"]{
-    font-family: 'Dangrek';
-    color: #63A375;
-    border: 0;
-    cursor: pointer;
-    background:  #E5F6F0;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 30px;
-    height: 35px;
-}
-
-.container .login-form .input-box input[type="submit"]:hover{
-    background-color: #63A375;
-    color: #E5F6F0;
-    transition: all 0.3s;
-}
-
-.container .login-form .forgot a{
-    color: var(--default-color);
-    text-decoration: none;
-}
-
-.container .login-form .divider{
-    text-align: center;
-    margin: 10px;
-    font-size: 18px;
-
-}
-
-.container .login-form .redes-sociais{
-    text-align: center;
-}
-
-.container .login-form .redes-sociais > img{
-    margin: 10px;
-    cursor: pointer;
-    width: 30px;
-}
-
-.container .login-form .sigup-text a{
-    color: var(--default-color);
-    text-decoration: none;
-}
-
-@media only screen and (min-width: 900px) and (max-width: 1100px){
-    body {
-        background-size: 100vw;
-    }
-}
-  
-@media only screen and (max-width: 950px){
-    body {
-        background-image: none;
-        background-color:lightgrey;
-        justify-content: center;
-    }
-}
-
-
-

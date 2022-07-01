@@ -1,7 +1,6 @@
 
 <div align="center">
   <h1>ADOPTONE</h1>
-
   <img src="./assets/logoV2.svg">
 </div>
 
